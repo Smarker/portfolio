@@ -5,6 +5,8 @@ import {
   Link
 } from 'react-router-dom'
 
+import splash from '../public/images/splash.jpg'
+
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
 // render both of them in different places when the
@@ -12,7 +14,9 @@ import {
 const routes = [
   { path: '/',
     exact: true,
-    sidebar: () => <div>home!</div>,
+    sidebar: () => (<div>
+       <img src={splash} height="300" width="300"/> 
+       </div>),
     main: () => <h2>Home</h2>
   },
   { path: '/about',
