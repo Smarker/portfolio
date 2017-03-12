@@ -5,7 +5,17 @@ import {
   Link
 } from 'react-router-dom'
 
-import splash from '../public/images/splash.jpg'
+import splash from '../public/images/splash.jpg';
+
+import '../node_modules/semantic-ui-css/semantic.min.css';
+
+import { Button } from 'semantic-ui-react';
+
+const ButtonExampleButton = () => (
+  <Button>
+    Click Here
+  </Button>
+)
 
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
@@ -15,12 +25,12 @@ const routes = [
   { path: '/',
     exact: true,
     sidebar: () => (<div>
-       <img src={splash} height="300" width="300"/> 
+       <img src={splash} height="300" width="300"/>
        </div>),
     main: () => <h2>Home</h2>
   },
   { path: '/about',
-    sidebar: () => <div>about!</div>,
+    sidebar: () => <div><ButtonExampleButton /></div>,
     main: () => <h2>about</h2>
   },
   { path: '/projects',
