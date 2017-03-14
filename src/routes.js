@@ -1,4 +1,6 @@
 import React from 'react'
+
+//using ES6 modules
 import {
   BrowserRouter as Router,
   Route,
@@ -17,6 +19,8 @@ const ButtonExampleButton = () => (
   </Button>
 )
 
+import Home from './components/Home';
+
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
 // render both of them in different places when the
@@ -27,7 +31,7 @@ const routes = [
     sidebar: () => (<div>
        <img src={splash} height="300" width="300"/>
        </div>),
-    main: () => <h2>Home</h2>
+    main: () => <Home />
   },
   { path: '/about',
     sidebar: () => <div><ButtonExampleButton /></div>,
