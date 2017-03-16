@@ -1,7 +1,5 @@
 import React from 'react';
 
-import ReactDOM from 'react-dom';
-
 import splash from '../../../public/images/splash.jpg';
 
 import { Button } from 'semantic-ui-react';
@@ -30,16 +28,17 @@ class Scroll extends React.Component {
   render() {
     return (
       <div>
+        THIS IS HOME
         <Button onClick={this.handleScroll}>
           Click Here
         </Button>
-        <img src={splash} height="1000" width="1000"/>
-        <img src={splash} height="1000" width="1000"/>
-        <img src={splash} height="1000" width="1000"/>
+        <img src={splash} alt="splash" height="1000" width="1000"/>
+        <img src={splash} alt="splash" height="1000" width="1000"/>
+        <img src={splash} alt="splash" height="1000" width="1000"/>
         <Blog ref="content"/>
-        <img src={splash} height="1000" width="1000"/>
-        <img src={splash} height="1000" width="1000"/>
-        <img src={splash} height="1000" width="1000"/>
+        <img src={splash} alt="splash" height="1000" width="1000"/>
+        <img src={splash} alt="splash" height="1000" width="1000"/>
+        <img src={splash} alt="splash" height="1000" width="1000"/>
       </div>
     );
   }
@@ -51,7 +50,6 @@ class Home extends React.Component {
     return (
       <div>
         this is home
-
 
         <Scroll />
 
