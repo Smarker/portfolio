@@ -3,7 +3,7 @@
     background-image: url('../../../public/images/splash2.jpg');
 
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 400px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

@@ -28,7 +28,6 @@ class Scroll extends React.Component {
   render() {
     return (
       <div>
-        THIS IS HOME
         <Button onClick={this.handleScroll}>
           Click Here
         </Button>
