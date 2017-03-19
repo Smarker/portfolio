@@ -67,21 +67,35 @@ class Home extends React.Component {
     location.href = 'mailto:StephanieMarker93@gmail.com';
   }
 
+  //TODO separate out content into 3 sections for mobile, tablet, computer
+  //TODO move container sections into component to reduce amount of code
   render() {
     return (
       <div className="content">
         <Grid padded columns={2} stackable>
-            <Grid.Row color='teal' stretched>
-              <Grid.Column className="computer or tablet only" width={6} textAlign='center' verticalAlign='middle'>
+            <Grid.Row style={{background: '#22252C'}} stretched>
+              <Grid.Column className="computer only" width={6} textAlign='center' verticalAlign='middle'>
                 <Splash />
               </Grid.Column>
-              <Grid.Column width={10} textAlign='center' verticalAlign='middle'>
+              <Grid.Column className="computer only" width={10} textAlign='center' verticalAlign='middle'>
                 <Container text>
                   <Image src={prof} className='bordered-image-white' size='small' shape='circular' centered />
                   <Header as='h1' inverted>Stephanie Marker</Header>
                   <Header as='h3' inverted>Software Engineer</Header>
-                  <p>I am a full stack software engineer from New Jersey. </p>
-                  <p>Check out some of my projects.</p>
+                  <p style={{color: 'white'}}>I am a full stack software engineer from New Jersey. </p>
+                  <p style={{color: 'white'}}>Check out some of my projects.</p>
+                  <Button inverted icon='github' size='small' onClick={this.githubClick}  />
+                  <Button inverted icon='linkedin' size='small' onClick={this.linkedinClick}  />
+                  <Button inverted icon='mail' size='small' onClick={this.emailClick}  />
+                </Container>
+              </Grid.Column>
+              <Grid.Column className="mobile only" width={10} textAlign='center' verticalAlign='middle'>
+                <Container text>
+                  <Image src={prof} className='bordered-image-white' size='tiny' shape='circular' centered />
+                  <Header as='h1' inverted>Stephanie Marker</Header>
+                  <Header as='h3' inverted>Software Engineer</Header>
+                  <p style={{color:'white'}}>I am a full stack software engineer from New Jersey. </p>
+                  <p style={{color:'white'}}>Check out some of my projects.</p>
                   <Button inverted icon='github' size='small' onClick={this.githubClick}  />
                   <Button inverted icon='linkedin' size='small' onClick={this.linkedinClick}  />
                   <Button inverted icon='mail' size='small' onClick={this.emailClick}  />
@@ -89,7 +103,8 @@ class Home extends React.Component {
               </Grid.Column>
             </Grid.Row>
         </Grid>
-        <Image src={splash2} size='massive'/>
+
+        <Blog ref="content"/>
       </div>
     );
   }

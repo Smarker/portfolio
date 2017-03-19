@@ -24,13 +24,13 @@ body {
 }
 
 a {
-    color: teal;
+    color: #E14658;
     text-decoration: none;
 }
 
 a:hover
 {
-     color: teal;
+     color: #E14658;
      text-decoration:none;
      cursor:pointer;
 }

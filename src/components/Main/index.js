@@ -21,15 +21,15 @@ class Main extends React.Component {
         <div className="ui top fixed sticky" style={{width: '100%'}}>
             <Menu size='large' attached='top'>
               <Menu.Menu position='right'>
-                <Menu.Item onClick>
+                <Menu.Item onClick={null}>
                   <Link to="/">Home</Link>
                 </Menu.Item>
 
-                <Menu.Item onClick>
+                <Menu.Item onClick={null}>
                   <Link to="/about">About</Link>
                 </Menu.Item>
 
-                <Menu.Item onClick>
+                <Menu.Item onClick={null}>
                   <Link to="/">Projects</Link>
                 </Menu.Item>
               </Menu.Menu>
