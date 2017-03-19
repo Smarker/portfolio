@@ -1,8 +1,13 @@
 import React from 'react';
 
-import splash from '../../../public/images/splash.jpg';
+import './style.css';
 
-import { Button } from 'semantic-ui-react';
+
+import splash2 from '../../../public/images/splash.jpg';
+
+import { Grid, Button, Container, Header } from 'semantic-ui-react';
+
+import Splash from './splash.js';
 
 import Blog from '../Blog';
 
@@ -31,13 +36,10 @@ class Scroll extends React.Component {
         <Button onClick={this.handleScroll}>
           Click Here
         </Button>
-        <img src={splash} alt="splash" height="1000" width="1000"/>
-        <img src={splash} alt="splash" height="1000" width="1000"/>
-        <img src={splash} alt="splash" height="1000" width="1000"/>
         <Blog ref="content"/>
-        <img src={splash} alt="splash" height="1000" width="1000"/>
-        <img src={splash} alt="splash" height="1000" width="1000"/>
-        <img src={splash} alt="splash" height="1000" width="1000"/>
+        <img src={splash2} alt="splash2" height="1000" width="1000"/>
+        <img src={splash2} alt="splash2" height="1000" width="1000"/>
+        <img src={splash2} alt="splash2" height="1000" width="1000"/>
       </div>
     );
   }
@@ -47,13 +49,18 @@ class Scroll extends React.Component {
 class Home extends React.Component {
   render() {
     return (
-      <div>
-        this is home
-
-        <Scroll />
-
-        <br />
-
+      <div className="content">
+        <Grid padded columns={2} stackable>
+            <Grid.Row color='teal' stretched>
+              <Grid.Column width={4} textAlign='center'>
+                <Splash />
+              </Grid.Column>
+              <Grid.Column width={12} textAlign='center'>
+                <Header as='h1' style={{color: 'white'}}>Stephanie Marker</Header>
+              </Grid.Column>
+            </Grid.Row>
+        </Grid>
+        <img src={splash2} alt="splash2" height="1000" width="1000"/>
       </div>
     );
   }

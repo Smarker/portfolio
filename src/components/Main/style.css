@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.main-content {
+  height: 100%;
+}
+
+.content {
+  height:100%;
+  padding-top: 45px;
+}
+
+.ui.grid {
+  height: 100%;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover
+{
+     color: teal;
+     text-decoration:none;
+     cursor:pointer;
+}

@@ -6,9 +6,11 @@
     "classnames": "^2.2.5",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-mt-svg-lines": "^0.6.0",
     "react-router": "^4.0.0",
     "react-router-dom": "^4.0.0",
     "react-scroll-to-component": "^1.0.1",
+    "react-sticky": "^5.0.5",
     "semantic-ui-css": "^2.2.9",
     "semantic-ui-react": "^0.67.0"
   },
