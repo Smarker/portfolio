@@ -1,3 +1,12 @@
 .bordered-image-white {
   border: 2px solid white;
 }
+
+.ui.inverted.button:hover {
+  color: #E14658;
+}
+
+.ui.inverted.button {
+  box-shadow: 0 0 0 2px #E14658 inset !important;
+  color: #E14658;
+}

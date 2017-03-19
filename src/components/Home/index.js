@@ -3,11 +3,13 @@ import React from 'react';
 import './style.css';
 
 import prof from '../../../public/images/prof.jpg';
-import splash2 from '../../../public/images/splash.jpg';
+import splash1 from '../../../public/images/splash2.jpg'
+
 
 import { Grid, Button, Container, Header, Image, Icon } from 'semantic-ui-react';
 
 import Splash from './splash.js';
+import {Splash5} from './splash.js';
 
 import Blog from '../Blog';
 
@@ -37,9 +39,9 @@ class Scroll extends React.Component {
           Click Here
         </Button>
         <Blog ref="content"/>
-        <img src={splash2} alt="splash2" height="1000" width="1000"/>
-        <img src={splash2} alt="splash2" height="1000" width="1000"/>
-        <img src={splash2} alt="splash2" height="1000" width="1000"/>
+        <img src={splash1} alt="splash2" height="1000" width="1000"/>
+        <img src={splash1} alt="splash2" height="1000" width="1000"/>
+        <img src={splash1} alt="splash2" height="1000" width="1000"/>
       </div>
     );
   }
@@ -72,14 +74,16 @@ class Home extends React.Component {
   render() {
     return (
       <div className="content">
-        <Grid padded columns={2} stackable>
+
+        <Grid className="computer only" padded columns={2} stackable>
             <Grid.Row style={{background: '#22252C'}} stretched>
-              <Grid.Column className="computer only" width={6} textAlign='center' verticalAlign='middle'>
+              <Grid.Column width={6} textAlign='center' verticalAlign='middle'>
                 <Splash />
               </Grid.Column>
-              <Grid.Column className="computer only" width={10} textAlign='center' verticalAlign='middle'>
+              <Grid.Column width={10} textAlign='center' verticalAlign='middle'>
                 <Container text>
-                  <Image src={prof} className='bordered-image-white' size='small' shape='circular' centered />
+                  {/*Use below image for about page*/}
+                  {/*<Image src={prof} className='bordered-image-white' size='small' shape='circular' centered />*/}
                   <Header as='h1' inverted>Stephanie Marker</Header>
                   <Header as='h3' inverted>Software Engineer</Header>
                   <p style={{color: 'white'}}>I am a full stack software engineer from New Jersey. </p>
@@ -89,11 +93,36 @@ class Home extends React.Component {
                   <Button inverted icon='mail' size='small' onClick={this.emailClick}  />
                 </Container>
               </Grid.Column>
-              <Grid.Column className="mobile only" width={10} textAlign='center' verticalAlign='middle'>
+            </Grid.Row>
+        </Grid>
+
+        <Grid className="tablet only" padded columns={2} stackable>
+            <Grid.Row style={{background: '#22252C'}} stretched>
+              <Grid.Column width={5} textAlign='center' verticalAlign='middle'>
+                <Splash5 />
+              </Grid.Column>
+              <Grid.Column width={8} textAlign='center' verticalAlign='middle'>
                 <Container text>
-                  <Image src={prof} className='bordered-image-white' size='tiny' shape='circular' centered />
+                  {/*<Image src={prof} className='bordered-image-white' size='small' shape='circular' centered />*/}
                   <Header as='h1' inverted>Stephanie Marker</Header>
                   <Header as='h3' inverted>Software Engineer</Header>
+                  <p style={{color: 'white'}}>I am a full stack software engineer from New Jersey. </p>
+                  <p style={{color: 'white'}}>Check out some of my projects.</p>
+                  <Button inverted icon='github' size='small' onClick={this.githubClick}  />
+                  <Button inverted icon='linkedin' size='small' onClick={this.linkedinClick}  />
+                  <Button inverted icon='mail' size='small' onClick={this.emailClick}  />
+                </Container>
+              </Grid.Column>
+            </Grid.Row>
+        </Grid>
+
+        <Grid className="mobile only" padded columns={2} stackable>
+            <Grid.Row style={{background: '#22252C'}} stretched>
+              <Grid.Column className="mobile only" width={10} textAlign='center' verticalAlign='middle'>
+                <Container text>
+                  {/*<Image src={prof} className='bordered-image-white' size='small' shape='circular' centered />*/}
+                  <Header as='h1' style={{color:'#E14658'}} inverted>Stephanie Marker</Header>
+                  <Header as='h3' style={{color:'#E14658'}}inverted>Software Engineer</Header>
                   <p style={{color:'white'}}>I am a full stack software engineer from New Jersey. </p>
                   <p style={{color:'white'}}>Check out some of my projects.</p>
                   <Button inverted icon='github' size='small' onClick={this.githubClick}  />
@@ -105,6 +134,8 @@ class Home extends React.Component {
         </Grid>
 
         <Blog ref="content"/>
+        <Blog />
+
       </div>
     );
   }
