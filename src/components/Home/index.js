@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 
-
+import prof from '../../../public/images/prof.jpg';
 import splash2 from '../../../public/images/splash.jpg';
 
 import { Grid, Button, Container, Header, Image, Icon } from 'semantic-ui-react';
@@ -72,16 +72,19 @@ class Home extends React.Component {
       <div className="content">
         <Grid padded columns={2} stackable>
             <Grid.Row color='teal' stretched>
-              <Grid.Column width={6} textAlign='center' verticalAlign='middle'>
+              <Grid.Column className="computer or tablet only" width={6} textAlign='center' verticalAlign='middle'>
                 <Splash />
               </Grid.Column>
               <Grid.Column width={10} textAlign='center' verticalAlign='middle'>
                 <Container text>
+                  <Image src={prof} className='bordered-image-white' size='small' shape='circular' centered />
                   <Header as='h1' inverted>Stephanie Marker</Header>
-                  <Header inverted sub>Software Developer</Header>
-                  <Button inverted icon='github' size='tiny' onClick={this.githubClick}  />
-                  <Button inverted icon='linkedin' size='tiny' onClick={this.linkedinClick}  />
-                  <Button inverted icon='mail' size='tiny' onClick={this.emailClick}  />
+                  <Header as='h3' inverted>Software Engineer</Header>
+                  <p>I am a full stack software engineer from New Jersey. </p>
+                  <p>Check out some of my projects.</p>
+                  <Button inverted icon='github' size='small' onClick={this.githubClick}  />
+                  <Button inverted icon='linkedin' size='small' onClick={this.linkedinClick}  />
+                  <Button inverted icon='mail' size='small' onClick={this.emailClick}  />
                 </Container>
               </Grid.Column>
             </Grid.Row>
