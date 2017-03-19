@@ -5,7 +5,7 @@ import './style.css';
 
 import splash2 from '../../../public/images/splash.jpg';
 
-import { Grid, Button, Container, Header } from 'semantic-ui-react';
+import { Grid, Button, Container, Header, Image } from 'semantic-ui-react';
 
 import Splash from './splash.js';
 
@@ -60,7 +60,7 @@ class Home extends React.Component {
               </Grid.Column>
             </Grid.Row>
         </Grid>
-        <img src={splash2} alt="splash2" height="1000" width="1000"/>
+        <Image src={splash2} size='massive'/>
       </div>
     );
   }
