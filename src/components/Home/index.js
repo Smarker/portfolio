@@ -5,7 +5,7 @@ import './style.css';
 
 import splash2 from '../../../public/images/splash.jpg';
 
-import { Grid, Button, Container, Header, Image } from 'semantic-ui-react';
+import { Grid, Button, Container, Header, Image, Icon } from 'semantic-ui-react';
 
 import Splash from './splash.js';
 
@@ -47,16 +47,42 @@ class Scroll extends React.Component {
 
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.name = "";
+    //binding necessary to get 'this' to work in callback
+    this.githubClick = this.githubClick.bind(this);
+    this.linkedinClick = this.linkedinClick.bind(this);
+  }
+
+  githubClick() {
+      location.href = 'https://github.com/Smarker';
+  }
+
+  linkedinClick() {
+    location.href = 'https://www.linkedin.com/in/stephaniemarker/';
+  }
+
+  emailClick() {
+    location.href = 'mailto:StephanieMarker93@gmail.com';
+  }
+
   render() {
     return (
       <div className="content">
         <Grid padded columns={2} stackable>
             <Grid.Row color='teal' stretched>
-              <Grid.Column width={4} textAlign='center'>
+              <Grid.Column width={6} textAlign='center' verticalAlign='middle'>
                 <Splash />
               </Grid.Column>
-              <Grid.Column width={12} textAlign='center'>
-                <Header as='h1' style={{color: 'white'}}>Stephanie Marker</Header>
+              <Grid.Column width={10} textAlign='center' verticalAlign='middle'>
+                <Container text>
+                  <Header as='h1' inverted>Stephanie Marker</Header>
+                  <Header inverted sub>Software Developer</Header>
+                  <Button inverted icon='github' size='tiny' onClick={this.githubClick}  />
+                  <Button inverted icon='linkedin' size='tiny' onClick={this.linkedinClick}  />
+                  <Button inverted icon='mail' size='tiny' onClick={this.emailClick}  />
+                </Container>
               </Grid.Column>
             </Grid.Row>
         </Grid>

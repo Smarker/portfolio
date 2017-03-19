@@ -19,18 +19,20 @@ class Main extends React.Component {
     return (
       <div className="main-content">
         <div className="ui top fixed sticky" style={{width: '100%'}}>
-            <Menu size='large'>
-              <Menu.Item>
-                <Link to="/">Home</Link>
-              </Menu.Item>
+            <Menu size='large' attached='top'>
+              <Menu.Menu position='right'>
+                <Menu.Item onClick>
+                  <Link to="/">Home</Link>
+                </Menu.Item>
 
-              <Menu.Item>
-                <Link to="/about">About</Link>
-              </Menu.Item>
+                <Menu.Item onClick>
+                  <Link to="/about">About</Link>
+                </Menu.Item>
 
-              <Menu.Item>
-                <Link to="/">Projects</Link>
-              </Menu.Item>
+                <Menu.Item onClick>
+                  <Link to="/">Projects</Link>
+                </Menu.Item>
+              </Menu.Menu>
             </Menu>
         </div>
         {this.props.children}
