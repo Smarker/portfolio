@@ -6,7 +6,7 @@ import prof from '../../../public/images/prof.jpg';
 import splash1 from '../../../public/images/splash2.jpg'
 
 
-import { Grid, Button, Container, Header, Image, Icon } from 'semantic-ui-react';
+import { Grid, Button, Container, Header, Image, Icon, Item } from 'semantic-ui-react';
 
 import Splash from './splash.js';
 import {Splash5} from './splash.js';
@@ -133,7 +133,9 @@ class Home extends React.Component {
             </Grid.Row>
         </Grid>
 
+        {/*Make blog post image and title clickable to new expanded view*/}
         <Blog ref="content"/>
+
         <Blog />
 
       </div>
