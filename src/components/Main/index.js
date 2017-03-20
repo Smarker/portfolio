@@ -9,8 +9,37 @@ import { Link } from 'react-router-dom'
 
 //see: https://facebook.github.io/react/docs/composition-vs-inheritance.html
 class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scrollPosition: 0,
+      styleName: "nav-white"
+    };
 
-  state = {}
+    //binding necessary to get 'this' to work in callback
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll(event) {
+    let height = window.innerHeight;
+    this.setState({ scrollPosition: event.pageY });
+
+    if(this.state.scrollPosition > height) {
+      console.log("past");
+      this.setState({ styleName: 'nav-dark' });
+    } else {
+      console.log("not past");
+      this.setState({ styleName: 'nav-white' });
+    }
+  }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
@@ -19,7 +48,7 @@ class Main extends React.Component {
     return (
       <div className="main-content">
         <div className="ui top fixed sticky" style={{width: '100%'}}>
-            <Menu size='large' attached='top'>
+            <Menu size='large' attached='top' className={this.state.styleName}>
               <Menu.Menu position='right'>
                 <Menu.Item onClick={null}>
                   <Link to="/">Home</Link>

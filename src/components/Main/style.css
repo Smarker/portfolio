@@ -34,3 +34,16 @@ a:hover
      text-decoration:none;
      cursor:pointer;
 }
+
+.ui.nav-dark.menu {
+  background: #22252C;
+  transition:top 0.5s ease;
+  -webkit-transition: background 0.5s; /* Safari */
+  transition: background 0.5s;
+}
+
+.ui.nav-white.menu {
+  transition:top 0.5s ease;
+  -webkit-transition: background 0.5s; /* Safari */
+  transition: background 0.5s;
+}
