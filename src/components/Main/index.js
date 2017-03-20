@@ -32,11 +32,9 @@ class Main extends React.Component {
     let height = window.innerHeight;
     this.setState({ scrollPosition: event.pageY });
 
-    if(this.state.scrollPosition > height) {
-      console.log("past");
+    if(this.state.scrollPosition > height - 50) { //for 50px nav height
       this.setState({ styleName: 'nav-dark' });
     } else {
-      console.log("not past");
       this.setState({ styleName: 'nav-white' });
     }
   }

@@ -9,7 +9,7 @@ import splash1 from '../../../public/images/splash2.jpg'
 import { Grid, Button, Container, Header, Image, Icon, Item } from 'semantic-ui-react';
 
 import Splash from './splash.js';
-import {Splash5} from './splash.js';
+import {Splash5, SmallSplash} from './splash.js';
 
 import Blog from '../Blog';
 
@@ -137,6 +137,21 @@ class Home extends React.Component {
         <Blog ref="content"/>
 
         <Blog />
+
+
+        <Container style={{background: '#E14658', 'padding-top': '30px', 'padding-bottom': '70px'}} fluid textAlign='center'>
+          <Header as='h1' style={{color:'#22252C', 'font-size': '3rem'}} textAlign='center'>
+            <Header.Content>
+              Want to work together?
+            </Header.Content>
+          </Header>
+          <Button basic inverted size='large' onClick={this.emailClick} style={{color: 'red'}}> Contact Me </Button>
+        </Container>
+
+        <Container style={{background: '#22252C', 'padding-top': '30px'}} fluid textAlign='center'>
+          <SmallSplash />
+          <Header sub style={{color:'#E14658', 'padding-bottom':'55px'}}> Made by Stephanie Marker &copy; 2017 </Header>
+        </Container>
 
       </div>
     );
