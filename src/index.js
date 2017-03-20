@@ -17,12 +17,15 @@ import {
 import Main from './components/Main';
 import Home from './components/Home';
 import About from './components/About';
+import Projects from './components/Projects';
 
+/*TODO: change file name to routes.js*/
 const routes = (
   <Router history={browserHistory}>
     <Main>
       <Route path='/' exact={true} component={Home}/>
       <Route path='/about' component={About}/>
+      <Route path='/projects' component={Projects}/>
     </Main>
   </Router>
 );

@@ -4,6 +4,7 @@ import test from '../../../public/images/icon.svg';
 import test2 from '../../../public/images/icon2.svg';
 import test3 from '../../../public/images/icon-small.svg';
 
+
 export default class Splash extends React.Component {
   constructor(props) {
     super(props);

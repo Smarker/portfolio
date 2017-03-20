@@ -58,7 +58,7 @@ class Home extends React.Component {
   }
 
   githubClick() {
-      location.href = 'https://github.com/Smarker';
+    location.href = 'https://github.com/Smarker';
   }
 
   linkedinClick() {
@@ -69,8 +69,8 @@ class Home extends React.Component {
     location.href = 'mailto:StephanieMarker93@gmail.com';
   }
 
-  //TODO separate out content into 3 sections for mobile, tablet, computer
   //TODO move container sections into component to reduce amount of code
+  //TODO add scroll up sticky
   render() {
     return (
       <div className="content">

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 
-
+import {Splash5, SmallSplash} from '../Home/splash.js';
 
 import { Menu } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
@@ -47,6 +47,9 @@ class Main extends React.Component {
       <div className="main-content">
         <div className="ui top fixed sticky" style={{width: '100%'}}>
             <Menu size='large' attached='top' className={this.state.styleName}>
+              <Menu.Item onClick={null}>
+              <Link to="/">SM</Link>
+              </Menu.Item>
               <Menu.Menu position='right'>
                 <Menu.Item onClick={null}>
                   <Link to="/">Home</Link>
@@ -57,7 +60,7 @@ class Main extends React.Component {
                 </Menu.Item>
 
                 <Menu.Item onClick={null}>
-                  <Link to="/">Projects</Link>
+                  <Link to="/projects">Projects</Link>
                 </Menu.Item>
               </Menu.Menu>
             </Menu>
