@@ -5,7 +5,7 @@ import { Container, Header } from 'semantic-ui-react'
 export default class Blog extends React.Component {
   render() {
     return (
-      <Container text style={{'padding-top': '50px', 'padding-bottom': '50px'}}>
+      <Container text style={{'padding-top': '25px', 'padding-bottom': '25px'}}>
         <Header as='h1' style={{color:'#E14658', 'font-size': '3rem'}}>
           <Header.Content>
             This is a test article

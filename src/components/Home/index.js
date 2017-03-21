@@ -138,21 +138,18 @@ class Home extends React.Component {
 
         <Blog />
 
-
-        <Container style={{background: '#E14658', 'padding-top': '30px', 'padding-bottom': '70px'}} fluid textAlign='center'>
-          <Header as='h1' style={{color:'#22252C', 'font-size': '3rem'}} textAlign='center'>
+        <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '25px', 'padding-bottom': '75px'}}>
+          <Header as='h1' style={{color:'#22252C', 'font-size': '3rem'}}>
             <Header.Content>
               Want to work together?
             </Header.Content>
           </Header>
-          <Button basic inverted size='large' onClick={this.emailClick} style={{color: 'red'}}> Contact Me </Button>
+          <Button basic inverted size='large' onClick={this.emailClick}> Contact Me </Button>
         </Container>
-
-        <Container style={{background: '#22252C', 'padding-top': '30px'}} fluid textAlign='center'>
+        <Container fluid textAlign='center' style={{background: '#22252C', 'padding-bottom': '5px'}}>
           <SmallSplash />
-          <Header sub style={{color:'#E14658', 'padding-bottom':'55px'}}> Made by Stephanie Marker &copy; 2017 </Header>
+          <Header sub style={{color:'#E14658'}}> Made by Stephanie Marker &copy; 2017 </Header>
         </Container>
-
       </div>
     );
   }
