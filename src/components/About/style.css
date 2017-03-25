@@ -1,3 +1,20 @@
+a.about-link {
+    color: #E14658;
+    text-decoration: none;
+}
+
+a.about-link:hover
+{
+     color: #E14658;
+     text-decoration:underline;
+     cursor:pointer;
+}
+
+a.link-underline:hover
+{
+  text-decoration:underline;
+}
+
 .parallax {
     /* The image used */
     background-image: url('../../../public/images/computer.jpg');
@@ -10,4 +27,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.paragraph-white {
+  color: white;
+}
+
+.bordered-image-white {
+  border: solid white 2px;
+}
+
+.spaced-image {
+  margin: 25px !important;
 }

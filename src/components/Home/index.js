@@ -138,7 +138,7 @@ class Home extends React.Component {
 
         <Blog />
 
-        <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '25px', 'padding-bottom': '75px', 'margin-top': '50px'}}>
+        <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '25px', 'padding-bottom': '75px', 'margin-top': '40px'}}>
           <Header as='h1' style={{color:'#22252C', 'font-size': '3rem'}}>
             <Header.Content>
               Want to work together?
