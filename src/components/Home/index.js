@@ -136,8 +136,6 @@ class Home extends React.Component {
         {/*Make blog post image and title clickable to new expanded view*/}
         <Blog ref="content"/>
 
-        <Blog />
-
         <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '25px', 'padding-bottom': '75px', 'margin-top': '40px'}}>
           <Header as='h1' style={{color:'#22252C', 'font-size': '3rem'}}>
             <Header.Content>
