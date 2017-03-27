@@ -1,0 +1,16 @@
+.blog-style h1 {
+  color: #E14658;
+  font-size: 3rem;
+}
+
+.blog-style ul, li{
+   color: #3F3250;
+}
+
+.blog-style h2, h3, h4, h5 {
+  color: #E14658;
+}
+
+.blog-style p {
+  color: #3F3250;
+}
