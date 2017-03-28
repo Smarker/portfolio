@@ -10,5 +10,7 @@ I am still working on my developer portfolio, but you can take a look at what I 
 ## Next Enhancements
 
 * Create projects page
-* Write blog post
+* Finish writing blog post and add images
+* Show blog post preview
+* Clean up webpack files
 * Add https

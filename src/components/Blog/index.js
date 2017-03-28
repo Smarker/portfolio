@@ -14,11 +14,11 @@ TODO: Show a preview of the blog post and link it to a new page
 export default class Blog extends React.Component {
   render() {
     return (
-        <Container text style={{'margin-top':'50px', 'padding-top':'50px'}}>
+        <Container text style={{'margin-top':'50px', 'padding-top':'50px', 'padding-bottom': '50px'}}>
           <Header as='h1' style={{color:'#E14658', 'font-size': '3rem'}}>
             <Header.Content>
               Creating a Developer Portfolio
-              <Header sub style={{color:'#883677'}}>March 19, 2017</Header>
+              <Header sub style={{color:'#883677'}}>March 27, 2017</Header>
             </Header.Content>
           </Header>
           <ReactMarkdown source={SettingUpAPortfolio} className="blog-style" />
