@@ -1,3 +1,4 @@
+
 a.about-link {
     color: #E14658;
     text-decoration: none;
@@ -15,9 +16,9 @@ a.link-underline:hover
   text-decoration:underline;
 }
 
-.parallax {
+.parallax-about {
     /* The image used */
-    background-image: url('../../../public/images/computer.jpg');
+    background-image: url('../../../public/images/paint.jpg');
 
     /* Set a specific height */
     min-height: 400px;

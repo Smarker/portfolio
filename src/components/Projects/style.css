@@ -1,0 +1,18 @@
+.label-style > a.ui.label {
+    /*background-color: #22252C; */
+    color: #22252C;
+}
+
+.parallax-projects {
+    /* The image used */
+    background-image: url('../../../public/images/computer-navy.jpg');
+
+    /* Set a specific height */
+    min-height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -15,7 +15,7 @@ export default class About extends React.Component {
   render() {
     return (
       <div>
-        <div className="parallax"></div>
+        <div className="parallax-about"></div>
         <Container style={{'padding-top': '50px', 'padding-bottom': '50px', 'background-color': '#22252C'}} fluid>
           <Container text>
             <Header as='h1' style={{'font-size': '3rem'}} inverted>About</Header>
@@ -38,7 +38,7 @@ export default class About extends React.Component {
             </Container>
         </Container>
 
-        <div className="parallax"></div>
+        <div className="parallax-about"></div>
         <Container style={{'padding-top': '50px', 'padding-bottom': '50px', 'background-color': '#22252C'}} fluid>
           <Container text textAlign='center'>
             <Image.Group size='tiny'>
@@ -46,7 +46,7 @@ export default class About extends React.Component {
               <Image src={hike} className='bordered-image-white' shape='circular' />
               <Image src={ski} className='bordered-image-white' shape='circular' />
             </Image.Group>
-            <p className="paragraph-white">When she is not coding, she likes playing volleyball, skiing, bouldering, and backpacking. Last September, she visited Iceland to go exploring and appreciate nature. Her favorite part of the trip was glacier hiking!</p>
+            <p className="paragraph-white">When she is not coding, she likes playing volleyball, skiing, bouldering, backpacking, and painting. Last September, she visited Iceland to go exploring and appreciate nature. Her favorite part of the trip was glacier hiking!</p>
           </Container>
         </Container>
 
