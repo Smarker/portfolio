@@ -19,6 +19,7 @@ export default class Projects extends React.Component {
 
   }
 
+  /* center content on mobile*/
   render() {
     return (
       <div className="content">
@@ -30,7 +31,7 @@ export default class Projects extends React.Component {
           </Header>
         </Container>
         <Container text style={{'padding-top': '50px'}}>
-          <Grid>
+          <Grid stackable>
             <Grid.Row columns={2}>
               <Grid.Column>
                 <Image src={slack} />
