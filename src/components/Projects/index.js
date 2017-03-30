@@ -24,7 +24,7 @@ export default class Projects extends React.Component {
     return (
       <div className="content">
         <Container textAlign='center' className="parallax-projects" fluid>
-          <Header as='h1' className='parallax-text' style={{color:'white', 'font-size': '4rem'}}>
+          <Header as='h1' className='parallax-text' style={{'color':'white', 'font-size': '4rem'}}>
             <Header.Content style={{'margin-top': '100px'}}>
               Projects
             </Header.Content>
@@ -34,15 +34,15 @@ export default class Projects extends React.Component {
           <Grid stackable>
             <Grid.Row columns={2}>
               <Grid.Column>
-                <Image src={slack} />
+                <Image src={slack} centered/>
               </Grid.Column>
               <Grid.Column>
-                <Header as='h1' style={{color:'#E14658', 'font-size': '3rem'}}>
+                <Header as='h1' style={{'color':'#E14658', 'font-size': '3rem'}}>
                   <Header.Content>
                     Chattybot
                   </Header.Content>
                 </Header>
-                <p style={{color:'#883677'}}>
+                <p style={{'color':'#883677'}}>
                   Chattybot is a chatbot built with Github's Hubot using Slack as an adapter. 
                   It's customized to respond to your command 'play [song name]'  by sending you a link to that song on spotify.
                 </p>
@@ -62,15 +62,15 @@ export default class Projects extends React.Component {
 
             <Grid.Row columns={2}>
               <Grid.Column>
-                <Image src={slack} />
+                <Image src={slack} centered/>
               </Grid.Column>
               <Grid.Column>
-                <Header as='h1' style={{color:'#E14658', 'font-size': '3rem'}}>
+                <Header as='h1' style={{'color':'#E14658', 'font-size': '3rem'}}>
                   <Header.Content>
                     Chattybot
                   </Header.Content>
                 </Header>
-                <p style={{color:'#883677'}}>
+                <p style={{'color':'#883677'}}>
                   Chattybot is a chatbot built with Github's Hubot using Slack as an adapter. 
                   It's customized to respond to your command 'play [song name]'  by sending you a link to that song on spotify.
                 </p>
@@ -90,15 +90,15 @@ export default class Projects extends React.Component {
 
             <Grid.Row columns={2}>
               <Grid.Column>
-                <Image src={slack} />
+                <Image src={slack} centered/>
               </Grid.Column>
               <Grid.Column>
-                <Header as='h1' style={{color:'#E14658', 'font-size': '3rem'}}>
+                <Header as='h1' style={{'color':'#E14658', 'font-size': '3rem'}}>
                   <Header.Content>
                     Chattybot
                   </Header.Content>
                 </Header>
-                <p style={{color:'#883677'}}>
+                <p style={{'color':'#883677'}}>
                   Chattybot is a chatbot built with Github's Hubot using Slack as an adapter. 
                   It's customized to respond to your command 'play [song name]'  by sending you a link to that song on spotify.
                 </p>
