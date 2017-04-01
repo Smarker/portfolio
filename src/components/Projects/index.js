@@ -19,17 +19,13 @@ export default class Projects extends React.Component {
 
   }
 
-  /* center content on mobile*/
+  /* add button for see on Github
+  update github readme for chatbot to only include the important parts
+  possibly add a new page for chattybot
+*/
   render() {
     return (
       <div className="content">
-        <Container textAlign='center' className="parallax-projects" fluid>
-          <Header as='h1' className='parallax-text' style={{'color':'white', 'font-size': '4rem'}}>
-            <Header.Content style={{'margin-top': '100px'}}>
-              Projects
-            </Header.Content>
-          </Header>
-        </Container>
         <Container text style={{'padding-top': '50px'}}>
           <Grid stackable>
             <Grid.Row columns={2}>

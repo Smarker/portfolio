@@ -51,9 +51,6 @@ class Main extends React.Component {
               <Link to="/">SM</Link>
               </Menu.Item>
               <Menu.Menu position='right'>
-                <Menu.Item onClick={null}>
-                  <Link to="/">Home</Link>
-                </Menu.Item>
 
                 <Menu.Item onClick={null}>
                   <Link to="/about">About</Link>
