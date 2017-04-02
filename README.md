@@ -4,13 +4,12 @@ I am still working on my developer portfolio, but you can take a look at what I 
 
 ## Known Issues
 
+* Refresh of a page results in 404
 * CSS transitions on nav do not display on browsers other than firefox.
-* About page images load too slowly
 
 ## Next Enhancements
 
-* Create projects page
-* Finish writing blog post and add images
 * Show blog post preview
+* Add post about chattybot and remove most details not needed from its readme
 * Clean up webpack files
 * Add https
