@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 
-import { Container, Header, Image } from 'semantic-ui-react'
+import { Container, Header, Image, Button } from 'semantic-ui-react'
 
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom'
@@ -25,6 +25,11 @@ let Post = (props) => {
             </Header>
           </Link>
           <ReactMarkdown source={props.markdown} className="blog-style" />
+          <Link to={props.link}>
+            <Button floated='right' inverted className="see-more-button">
+              See More
+            </Button>
+          </Link>
         </Container>
       );
     } else {

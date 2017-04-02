@@ -32,6 +32,13 @@
   box-shadow: 1px 1px 5px #d3d3d3;
 }
 
+/*See More Button Style*/
+.ui.inverted.right.floated.button.see-more-button:hover {
+  background: #E14658;
+  color: white;
+  box-shadow: 0 0 0 2px #E14658 inset !important;
+}
+
 /*Post Padding Style*/
 .post-padding {
   margin-top:50px;
