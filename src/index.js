@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 import '../node_modules/semantic-ui-css/semantic.min.css';
 
-import { browserHistory, hashHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 
 import './index.css';
 
@@ -21,7 +21,7 @@ import Projects from './components/Projects';
 
 /*TODO: change file name to routes.js*/
 const routes = (
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Main>
       <Route path='/' exact={true} component={Home}/>
       <Route path='/about' component={About}/>
