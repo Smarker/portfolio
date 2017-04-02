@@ -2,7 +2,6 @@ import React from 'react';
 
 import './style.css';
 
-import prof from '../../../public/images/prof.jpg';
 import splash1 from '../../../public/images/splash2.jpg'
 
 
