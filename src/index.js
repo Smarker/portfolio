@@ -16,6 +16,7 @@ import {
 
 import Main from './components/Main';
 import Home from './components/Home';
+import Post from './components/Blog';
 import About from './components/About';
 import Projects from './components/Projects';
 
@@ -24,6 +25,7 @@ const routes = (
   <Router history={browserHistory}>
     <Main>
       <Route path='/' exact={true} component={Home}/>
+      <Route path='/creating-a-developer-portfolio' component={Post}/>
       <Route path='/about' component={About}/>
       <Route path='/projects' component={Projects}/>
     </Main>

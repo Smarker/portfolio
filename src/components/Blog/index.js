@@ -11,7 +11,7 @@ import SettingUpAPortfolio from '../../markdown/blog/2017/march/SettingUpAPortfo
 /*
 TODO: Show a preview of the blog post and link it to a new page
 */
-export default class Blog extends React.Component {
+export default class Post extends React.Component {
   render() {
     return (
         <Container text style={{'margin-top':'50px', 'padding-top':'50px', 'padding-bottom': '50px'}}>
