@@ -11,8 +11,9 @@ This app is best viewed in firefox. I will try to oupdate this for other browser
 
 ## Next Enhancements
 
-* Make blog post preview route to entire post
-* Add new blog post for setting up namecheap + heroku
+* Add new blog post for setting up namecheap + heroku (could add this as a see also for the first post)
+* use react semantic mobile, computer, tablet props instead of just semantic
+* Add dimmer on blog post photo?
 * Add post about chattybot and remove most details not needed from its readme
 * Clean up webpack files
 * Add https
