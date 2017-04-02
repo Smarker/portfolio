@@ -4,15 +4,17 @@ import './style.css';
 
 import splash1 from '../../../public/images/splash2.jpg'
 
-
-import { Grid, Button, Container, Header, Image, Icon, Item } from 'semantic-ui-react';
+import { Grid, Button, Container, Header } from 'semantic-ui-react';
 
 import Splash from './splash.js';
 import {Splash5, SmallSplash} from './splash.js';
 
-import Blog from '../Blog';
+import Post from '../Blog/Post';
 
 import scrollToComponent from 'react-scroll-to-component';
+
+import { SettingUpAPortfolioPreview } from '../../markdown/blog/2017/march/SettingUpAPortfolio.js';
+
 
 class Scroll extends React.Component {
   constructor(props) {
@@ -37,7 +39,7 @@ class Scroll extends React.Component {
         <Button onClick={this.handleScroll}>
           Click Here
         </Button>
-        <Blog ref="content"/>
+        <Post ref="content"/>
         <img src={splash1} alt="splash2" height="1000" width="1000"/>
         <img src={splash1} alt="splash2" height="1000" width="1000"/>
         <img src={splash1} alt="splash2" height="1000" width="1000"/>
@@ -77,7 +79,7 @@ class Home extends React.Component {
         <Grid className="computer only" padded columns={2} stackable>
             <Grid.Row style={{background: '#22252C'}} stretched>
               <Grid.Column width={6} textAlign='center' verticalAlign='middle'>
-                <Splash />
+                <Splash alt="computer-splash"/>
               </Grid.Column>
               <Grid.Column width={10} textAlign='center' verticalAlign='middle'>
                 <Container text>
@@ -98,7 +100,7 @@ class Home extends React.Component {
         <Grid className="tablet only" padded columns={2} stackable>
             <Grid.Row style={{background: '#22252C'}} stretched>
               <Grid.Column width={5} textAlign='center' verticalAlign='middle'>
-                <Splash5 />
+                <Splash5 alt="tablet-splash"/>
               </Grid.Column>
               <Grid.Column width={8} textAlign='center' verticalAlign='middle'>
                 <Container text>
@@ -133,7 +135,7 @@ class Home extends React.Component {
         </Grid>
 
         {/*Make blog post image and title clickable to new expanded view*/}
-        <Blog ref="content"/>
+        {SettingUpAPortfolioPreview}
 
         <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '10px', 'padding-bottom': '50px', 'margin-top': '40px'}}>
           <Header as='h1' style={{color:'#22252C'}}>
@@ -144,7 +146,7 @@ class Home extends React.Component {
           <Button basic inverted size='large' onClick={this.emailClick}> Contact Me </Button>
         </Container>
         <Container fluid textAlign='center' style={{background: '#22252C', 'padding-bottom': '5px'}}>
-          <SmallSplash />
+          <SmallSplash alt="small-splash" />
           <Header sub style={{color:'#E14658', 'margin': '0'}}> Made by Stephanie Marker &copy; 2017 </Header>
         </Container>
       </div>

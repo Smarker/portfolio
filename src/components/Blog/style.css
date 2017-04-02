@@ -1,3 +1,15 @@
+/* Post Text Style */
+.pink-header {
+  color:#E14658 !important;
+  font-size: 3rem !important;
+  margin: 0 !important;
+}
+
+.purple-subheader {
+  color:#883677 !important;
+}
+
+/*Markdown Style*/
 .blog-style h1 {
   color: #E14658;
   font-size: 3rem;
@@ -10,7 +22,19 @@
 .blog-style h2, h3, h4, h5 {
   color: #E14658;
 }
-
+  
 .blog-style p {
   color: #3F3250;
+}
+
+/*Image Style*/
+.image-style {
+  box-shadow: 1px 1px 5px #d3d3d3;
+}
+
+/*Post Padding Style*/
+.post-padding {
+  margin-top:50px;
+  padding-top:50px;
+  padding-bottom:50px;
 }

@@ -2,9 +2,8 @@ import React from 'react';
 
 import './style.css';
 
-import { Card, Container, Header, Image, Icon, Label, Divider, Segment, Button } from 'semantic-ui-react';
+import { Card, Container, Image, Label, Divider, Button } from 'semantic-ui-react';
 
-import slack from '../../../public/images/projects/slack-logo.svg';
 import hubot from '../../../public/images/projects/hubot.png';
 import mirror from '../../../public/images/projects/smart-mirror.jpg';
 

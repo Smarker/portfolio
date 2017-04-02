@@ -2,8 +2,6 @@ import React from 'react';
 
 import './style.css';
 
-import {Splash5, SmallSplash} from '../Home/splash.js';
-
 import { Menu } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 

@@ -1,4 +1,8 @@
-let SettingUpAPortfolio = `A developer portfolio is a chance to showcase your programming projects and share your
+import React from 'react';
+import Post from '../../../../components/Blog/Post';
+import { Link } from 'react-router-dom'
+
+const SettingUpAPortfolioMarkdown = `A developer portfolio is a chance to showcase your programming projects and share your
 aspirations with others. A portfolio's goal could be to market yourself to potential employers, to share your experiences
 or advice you have on different technologies, or to demonstrate your skills. Given that many people already have Github and LinkedIn accounts,
 a developer portfolio is a great way to set yourself apart from others. Also, it allows you to be able to create a more detailed story about
@@ -106,7 +110,34 @@ code to your html.
 
 These are not the only steps that you can do to make your portfolio successful. Make sure to look at others' portfolios and 
 see what works for them. Good luck!
+`;
 
-`
+const SettingUpAPortfolioPreviewMarkdown = `A developer portfolio is a chance to showcase your programming projects and share your
+aspirations with others. A portfolio's goal could be to market yourself to potential employers, to share your experiences
+or advice you have on different technologies, or to demonstrate your skills. Given that many people already have Github and LinkedIn accounts,
+a developer portfolio is a great way to set yourself apart from others. Also, it allows you to be able to create a more detailed story about
+yourself. You can express more about the topics you are interested in through posts you make on your portfolio...
+`;
 
+let SettingUpAPortfolio = () => (
+    <Post 
+        image="../../../images/blog/create-portfolio.jpg" 
+        title="Creating a Developer Portfolio" 
+        created="March 27, 2017" 
+        markdown={ SettingUpAPortfolioMarkdown }
+    />
+);
+
+let SettingUpAPortfolioPreview = (
+    <Link to="/creating-a-developer-portfolio">
+        <Post 
+            image="../../../images/blog/create-portfolio.jpg" 
+            title="Creating a Developer Portfolio" 
+            created="March 27, 2017" 
+            markdown={ SettingUpAPortfolioPreviewMarkdown }
+        />
+    </Link>
+);
+
+export { SettingUpAPortfolioPreview };
 export default SettingUpAPortfolio;
