@@ -11,14 +11,12 @@ import mirror from '../../../public/images/projects/smart-mirror.jpg';
 export default class Projects extends React.Component {
   constructor(props) {
     super(props);
+
+    this.githubChatbotClick = this.githubChatbotClick.bind(this);
   }
 
-  componentDidMount() {
-    
-  }
-
-  componentWillUnmount() {
-
+  githubChatbotClick() {
+    location.href = 'https://github.com/Smarker/chattybot';
   }
 
   /* add button for see on Github
@@ -34,7 +32,7 @@ export default class Projects extends React.Component {
             <Card>
               <Image src={hubot} className="zoom-image" />
               <Card.Content>
-                <Divider horizontal> <Button className="circle-button" circular icon='github' /> </Divider>
+                <Divider horizontal> <Button className="circle-button" circular icon='github'  onClick={this.githubChatbotClick}/> </Divider>
                 <Card.Header style={{'color':'#E14658'}}>Chattybot</Card.Header>
                 <Card.Meta style={{'color':'#883677'}}>December 2016</Card.Meta>
                 <Card.Description style={{'color':'#22252C'}}>Chattybot is a chatbot built with Github's Hubot using Slack as an adapter. 
@@ -57,7 +55,7 @@ export default class Projects extends React.Component {
             <Card>
               <Image src={mirror} className="zoom-image" />
               <Card.Content>
-                <Divider horizontal> <Button className="circle-button" circular icon='github' /> </Divider>
+                <Divider horizontal> <Button className="circle-button" circular icon='github' disabled/> </Divider>
                 <Card.Header style={{'color':'#E14658'}}>Smart Mirror</Card.Header>
                 <Card.Meta style={{'color':'#883677'}}>January 2017</Card.Meta>
                 <Card.Description style={{'color':'#22252C'}}>I am currently working on a raspberry pi smart mirror with voice recognition. The mirror can understand basic commands 

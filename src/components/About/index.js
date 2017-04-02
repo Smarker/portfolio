@@ -3,10 +3,10 @@ import React from 'react';
 
 import './style.css';
 
-import profile from '../../../public/images/profile-bw.jpg';
-import climb from '../../../public/images/iceland-climb-bw.jpg';
-import hike from '../../../public/images/hiking-bw.jpg';
-import ski from '../../../public/images/ski-bw.jpg';
+import profile from '../../../public/images/about/profile-bw.jpg';
+import climb from '../../../public/images/about/iceland-climb-bw.jpg';
+import hike from '../../../public/images/about/hiking-bw.jpg';
+import ski from '../../../public/images/about/ski-bw.jpg';
 
 import { Container, Header, Item, Image} from 'semantic-ui-react';
 import { Link } from 'react-router-dom';

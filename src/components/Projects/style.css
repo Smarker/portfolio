@@ -2,13 +2,24 @@
     color: #22252C;
 }
 
- button.ui.circular.circle-button {
+button.ui.circular.circle-button {
     height: 36px;
-   /* background-color: #22252C; */
+    background-color: #883677;
+    color: white;
+}
+
+button.ui.circular.circle-button:hover {
+    height: 36px;
+    background-color: #E14658;
+    color: white;
 }
 
 #projects-container {
     background-color: #F5F5F5;
+}
+
+.ui.horizontal.divider {
+    margin-top: 0;
 }
 
 .ui.card {

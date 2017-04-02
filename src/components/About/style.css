@@ -18,7 +18,7 @@ a.link-underline:hover
 
 .parallax-about {
     /* The image used */
-    background-image: url('../../../public/images/computer.jpg');
+    background-image: url('../../../public/images/about/computer.jpg');
 
     /* Set a specific height */
     min-height: 400px;
