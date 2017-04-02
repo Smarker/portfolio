@@ -136,8 +136,8 @@ class Home extends React.Component {
         {/*Make blog post image and title clickable to new expanded view*/}
         <Blog ref="content"/>
 
-        <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '25px', 'padding-bottom': '75px', 'margin-top': '40px'}}>
-          <Header as='h1' style={{color:'#22252C', 'font-size': '3rem'}}>
+        <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '10px', 'padding-bottom': '50px', 'margin-top': '40px'}}>
+          <Header as='h1' style={{color:'#22252C'}}>
             <Header.Content>
               Want to work together?
             </Header.Content>
@@ -146,7 +146,7 @@ class Home extends React.Component {
         </Container>
         <Container fluid textAlign='center' style={{background: '#22252C', 'padding-bottom': '5px'}}>
           <SmallSplash />
-          <Header sub style={{color:'#E14658'}}> Made by Stephanie Marker &copy; 2017 </Header>
+          <Header sub style={{color:'#E14658', 'margin': '0'}}> Made by Stephanie Marker &copy; 2017 </Header>
         </Container>
       </div>
     );

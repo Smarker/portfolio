@@ -1,18 +1,32 @@
 .label-style > a.ui.label {
-    /*background-color: #22252C; */
     color: #22252C;
 }
 
-.parallax-projects {
-    /* The image used */
-    background-image: url('../../../public/images/computer-navy.jpg');
+ button.ui.circular.circle-button {
+    height: 36px;
+   /* background-color: #22252C; */
+}
 
-    /* Set a specific height */
-    min-height: 400px;
+#projects-container {
+    background-color: #F5F5F5;
+}
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.ui.card {
+    overflow: hidden;
+}
+
+img.ui.image.zoom-image {
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+img.ui.image.zoom-image:hover {
+  -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
 }

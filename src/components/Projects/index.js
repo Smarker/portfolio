@@ -2,9 +2,11 @@ import React from 'react';
 
 import './style.css';
 
-import { Grid, Container, Header, Image, Icon, Label, Divider, Card } from 'semantic-ui-react';
+import { Card, Container, Header, Image, Icon, Label, Divider, Segment, Button } from 'semantic-ui-react';
 
 import slack from '../../../public/images/projects/slack-logo.svg';
+import hubot from '../../../public/images/projects/hubot.png';
+import mirror from '../../../public/images/projects/smart-mirror.jpg';
 
 export default class Projects extends React.Component {
   constructor(props) {
@@ -25,23 +27,21 @@ export default class Projects extends React.Component {
 */
   render() {
     return (
-      <div className="content">
+      <div className="content" id="projects-container">
         <Container text style={{'padding-top': '50px'}}>
-          <Grid stackable>
-            <Grid.Row columns={2}>
-              <Grid.Column>
-                <Image src={slack} centered/>
-              </Grid.Column>
-              <Grid.Column>
-                <Header as='h1' style={{'color':'#E14658', 'font-size': '3rem'}}>
-                  <Header.Content>
-                    Chattybot
-                  </Header.Content>
-                </Header>
-                <p style={{'color':'#883677'}}>
-                  Chattybot is a chatbot built with Github's Hubot using Slack as an adapter. 
-                  It's customized to respond to your command 'play [song name]'  by sending you a link to that song on spotify.
-                </p>
+
+          <Card.Group stackable>
+            <Card>
+              <Image src={hubot} className="zoom-image" />
+              <Card.Content>
+                <Divider horizontal> <Button className="circle-button" circular icon='github' /> </Divider>
+                <Card.Header style={{'color':'#E14658'}}>Chattybot</Card.Header>
+                <Card.Meta style={{'color':'#883677'}}>December 2016</Card.Meta>
+                <Card.Description style={{'color':'#22252C'}}>Chattybot is a chatbot built with Github's Hubot using Slack as an adapter. 
+                    It's customized to respond to your command 'play [song name]'  by sending you a link to that song on spotify.
+                </Card.Description>
+              </Card.Content>
+              <Card.Content extra>
                 <Label.Group className="label-style" size='large'>
                   <Label>
                     Hubot
@@ -51,65 +51,34 @@ export default class Projects extends React.Component {
                   </Label>
                   <Label>Spotify API</Label>
                 </Label.Group>
-              </Grid.Column>
-            </Grid.Row>
+              </Card.Content>
+            </Card>
 
-            <Divider section />
-
-            <Grid.Row columns={2}>
-              <Grid.Column>
-                <Image src={slack} centered/>
-              </Grid.Column>
-              <Grid.Column>
-                <Header as='h1' style={{'color':'#E14658', 'font-size': '3rem'}}>
-                  <Header.Content>
-                    Chattybot
-                  </Header.Content>
-                </Header>
-                <p style={{'color':'#883677'}}>
-                  Chattybot is a chatbot built with Github's Hubot using Slack as an adapter. 
-                  It's customized to respond to your command 'play [song name]'  by sending you a link to that song on spotify.
-                </p>
+            <Card>
+              <Image src={mirror} className="zoom-image" />
+              <Card.Content>
+                <Divider horizontal> <Button className="circle-button" circular icon='github' /> </Divider>
+                <Card.Header style={{'color':'#E14658'}}>Smart Mirror</Card.Header>
+                <Card.Meta style={{'color':'#883677'}}>January 2017</Card.Meta>
+                <Card.Description style={{'color':'#22252C'}}>I am currently working on a raspberry pi smart mirror with voice recognition. The mirror can understand basic commands 
+                    like 'Show me a map of New Jersey' or 'Tell me the time'. 
+                </Card.Description>
+              </Card.Content>
+              <Card.Content extra>
                 <Label.Group className="label-style" size='large'>
                   <Label>
-                    Hubot
+                    Raspberry Pi
                   </Label>
                   <Label>
-                    Slack
+                    smart-mirror API
                   </Label>
-                  <Label>Spotify API</Label>
+                  <Label>
+                    Evan Cohen
+                  </Label>
                 </Label.Group>
-              </Grid.Column>
-            </Grid.Row>
-
-            <Divider section />
-
-            <Grid.Row columns={2}>
-              <Grid.Column>
-                <Image src={slack} centered/>
-              </Grid.Column>
-              <Grid.Column>
-                <Header as='h1' style={{'color':'#E14658', 'font-size': '3rem'}}>
-                  <Header.Content>
-                    Chattybot
-                  </Header.Content>
-                </Header>
-                <p style={{'color':'#883677'}}>
-                  Chattybot is a chatbot built with Github's Hubot using Slack as an adapter. 
-                  It's customized to respond to your command 'play [song name]'  by sending you a link to that song on spotify.
-                </p>
-                <Label.Group className="label-style" size='large'>
-                  <Label>
-                    Hubot
-                  </Label>
-                  <Label>
-                    Slack
-                  </Label>
-                  <Label>Spotify API</Label>
-                </Label.Group>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
+              </Card.Content>
+            </Card>
+          </Card.Group>
         </Container>
       </div>
     );
