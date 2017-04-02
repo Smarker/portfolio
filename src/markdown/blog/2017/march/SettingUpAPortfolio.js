@@ -1,6 +1,5 @@
 import React from 'react';
 import Post from '../../../../components/Blog/Post';
-import { Link } from 'react-router-dom'
 
 const SettingUpAPortfolioMarkdown = `A developer portfolio is a chance to showcase your programming projects and share your
 aspirations with others. A portfolio's goal could be to market yourself to potential employers, to share your experiences
@@ -121,6 +120,7 @@ yourself. You can express more about the topics you are interested in through po
 
 let SettingUpAPortfolio = () => (
     <Post 
+        link=""
         image="../../../images/blog/create-portfolio.jpg" 
         title="Creating a Developer Portfolio" 
         created="March 27, 2017" 
@@ -129,14 +129,13 @@ let SettingUpAPortfolio = () => (
 );
 
 let SettingUpAPortfolioPreview = (
-    <Link to="/creating-a-developer-portfolio">
-        <Post 
-            image="../../../images/blog/create-portfolio.jpg" 
-            title="Creating a Developer Portfolio" 
-            created="March 27, 2017" 
-            markdown={ SettingUpAPortfolioPreviewMarkdown }
-        />
-    </Link>
+    <Post 
+        link="/creating-a-developer-portfolio"
+        image="../../../images/blog/create-portfolio.jpg" 
+        title="Creating a Developer Portfolio" 
+        created="March 27, 2017" 
+        markdown={ SettingUpAPortfolioPreviewMarkdown }
+    />
 );
 
 export { SettingUpAPortfolioPreview };
