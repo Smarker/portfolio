@@ -11,8 +11,12 @@ This app is best viewed in firefox. I will try to oupdate this for other browser
 
 ## Next Enhancements
 
+* add volunteering page?
+* tag posts so they can be more easily searched
+* add ability to search for posts
+* paginate the posts
 * Make nav blue on mostly white pages
-* use react semantic mobile, computer, tablet props instead of just semantic
+* use react semantic mobile, computer, tablet props (ie only={computer}) instead of just semantic
 * Add dimmer on blog post photo?
 * Add post about chattybot and remove most details not needed from its readme
 * Clean up webpack files

@@ -13,7 +13,7 @@ let Post = (props) => {
     {/* Post Preview */}
     if(props.link !== "") {
       return (
-        <Container text className="post-padding-preview" >
+        <Container text className="post-padding-preview">
           <Link to={props.link}>
             <Image src={props.image} size='huge' className="image-style" />
             <Header as='h1' className="pink-header">
