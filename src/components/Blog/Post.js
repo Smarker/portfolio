@@ -14,7 +14,7 @@ let Post = (props) => {
     if(props.link !== "") {
       return (
         <Grid centered columns={1}>
-          <Grid.Column className="mobile only" rows={2} style={{'padding':'0'}}>
+          <Grid.Column className="mobile only" rows={2} >
             <Grid.Row>
               <Link to={props.link}>
                 <Image src={props.image} className="image-style" fluid />
