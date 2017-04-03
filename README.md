@@ -2,7 +2,7 @@
 
 I am still working on my developer portfolio, but you can take a look at what I have done so far [here](http://www.stephaniemarker.com).
 
-This app is best viewed in firefox. I will try to oupdate this for other browsers as soon as I can.
+This app is best viewed in firefox. I will try to update this for other browsers as soon as I can.
 
 ## Known Issues
 
