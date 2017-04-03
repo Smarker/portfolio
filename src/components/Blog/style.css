@@ -29,6 +29,7 @@
 
 /*Image Style*/
 .image-style {
+  max-height: 300px;
   box-shadow: 1px 1px 5px #d3d3d3;
 }
 
@@ -40,8 +41,15 @@
 }
 
 /*Post Padding Style*/
-.post-padding {
-  margin-top:50px;
+.post-padding-preview {
+  margin-top:25px;
   padding-top:50px;
   padding-bottom:50px;
+}
+.post-padding-full {
+  padding-bottom:50px;
+}
+
+.blog-style img { 
+    box-shadow: 1px 1px 5px #d3d3d3;
 }

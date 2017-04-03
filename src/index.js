@@ -18,7 +18,8 @@ import Main from './components/Main';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
-import SettingUpAPortfolio from './markdown/blog/2017/march/SettingUpAPortfolio';
+import { SettingUpAPortfolio } from './markdown/blog/2017/march/SettingUpAPortfolio';
+import { SettingUpCustomDomainWithHerokuAndNamecheap } from './markdown/blog/2017/april/SettingUpCustomDomainWithHerokuAndNamecheap';
 
 /*TODO: change file name to routes.js*/
 const routes = (
@@ -26,6 +27,7 @@ const routes = (
     <Main>
       <Route path='/' exact={true} component={Home}/>
       <Route path='/creating-a-developer-portfolio' component={SettingUpAPortfolio} />
+      <Route path='/setting-up-custom-domain-with-heroku-and-namecheap' component={SettingUpCustomDomainWithHerokuAndNamecheap} />
       <Route path='/about' component={About}/>
       <Route path='/projects' component={Projects}/>
     </Main>

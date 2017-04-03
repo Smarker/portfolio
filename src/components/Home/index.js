@@ -11,43 +11,10 @@ import {Splash5, SmallSplash} from './splash.js';
 
 import Post from '../Blog/Post';
 
-import scrollToComponent from 'react-scroll-to-component';
+//import scrollToComponent from 'react-scroll-to-component';
 
-import { SettingUpAPortfolioPreview } from '../../markdown/blog/2017/march/SettingUpAPortfolio.js';
-
-
-class Scroll extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-
-    //binding necessary to get 'this' to work in callback
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-
-  handleScroll() {
-    scrollToComponent(this.refs.content, {
-      offset: 0,
-      align: 'top',
-      duration: 1000
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <Button onClick={this.handleScroll}>
-          Click Here
-        </Button>
-        <Post ref="content"/>
-        <img src={splash1} alt="splash2" height="1000" width="1000"/>
-        <img src={splash1} alt="splash2" height="1000" width="1000"/>
-        <img src={splash1} alt="splash2" height="1000" width="1000"/>
-      </div>
-    );
-  }
-}
-
+import SettingUpAPortfolioPreview from '../../markdown/blog/2017/march/SettingUpAPortfolio.js';
+import SettingUpCustomDomainWithHerokuAndNamecheapPreview from '../../markdown/blog/2017/april/SettingUpCustomDomainWithHerokuAndNamecheap.js';
 
 class Home extends React.Component {
   constructor(props) {
@@ -134,8 +101,9 @@ class Home extends React.Component {
             </Grid.Row>
         </Grid>
 
-        {/*Make blog post image and title clickable to new expanded view*/}
         {SettingUpAPortfolioPreview}
+
+        <SettingUpCustomDomainWithHerokuAndNamecheapPreview />
 
         <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '10px', 'padding-bottom': '50px', 'margin-top': '40px'}}>
           <Header as='h1' style={{color:'#22252C'}}>

@@ -138,5 +138,5 @@ let SettingUpAPortfolioPreview = (
     />
 );
 
-export { SettingUpAPortfolioPreview };
-export default SettingUpAPortfolio;
+export { SettingUpAPortfolio };
+export default SettingUpAPortfolioPreview;
