@@ -11,6 +11,8 @@ This app is best viewed in firefox. I will try to update this for other browsers
 
 ## Next Enhancements
 
+* add animation to landing page
+* add svgs in vector like the ones on http://devport.co/ front page to first blog post to break up the text
 * add volunteering page?
 * tag posts so they can be more easily searched
 * add ability to search for posts
@@ -21,3 +23,11 @@ This app is best viewed in firefox. I will try to update this for other browsers
 * Add post about chattybot and remove most details not needed from its readme
 * Clean up webpack files
 * Add https
+* Add video of completed smart mirror
+* Add video of setting up chatbot
+
+## Way into the Future Enhancements
+
+* Add total number of blog posts
+* search blog posts by tag
+* Could add a timeline view - not sure if I want to include this 

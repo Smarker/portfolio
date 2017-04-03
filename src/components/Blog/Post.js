@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 
-import { Container, Header, Image, Button } from 'semantic-ui-react'
+import { Container, Header, Image, Button, Label } from 'semantic-ui-react'
 
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom'
