@@ -5,6 +5,11 @@
   margin: 0 !important;
 }
 
+.pink-header-mobile {
+  color:#E14658 !important;
+  margin: 0 !important;
+}
+
 .purple-subheader {
   color:#883677 !important;
 }
@@ -27,6 +32,12 @@
   color: #3F3250;
 }
 
+.blog-style-mobile p {
+  color: #3F3250;
+  margin-right:5px;
+  margin-left:5px;
+}
+
 /*Image Style*/
 .image-style {
   max-height: 300px;
@@ -41,15 +52,19 @@
 }
 
 /*Post Padding Style*/
-.post-padding-preview {
-  margin-top:25px;
-  padding-top:50px;
-  padding-bottom:50px;
-}
 .post-padding-full {
   padding-bottom:50px;
 }
 
 .blog-style img { 
     box-shadow: 1px 1px 5px #d3d3d3;
+}
+
+.grid-row-mobile-padding {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.ui.centered.one.column.grid {
+  margin:0;
 }
