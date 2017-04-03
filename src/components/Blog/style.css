@@ -56,10 +56,10 @@
   padding-bottom:50px;
 }
 
-.blog-style img { 
-    box-shadow: 1px 1px 5px #d3d3d3;
+.post-padding-preview {
+  padding-bottom:50px;
 }
 
-.ui.centered.one.column.grid {
-  margin:0;
+.blog-style img { 
+    box-shadow: 1px 1px 5px #d3d3d3;
 }
