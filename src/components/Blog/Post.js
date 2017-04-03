@@ -20,7 +20,7 @@ let Post = (props) => {
                 <Image src={props.image} className="image-style" fluid />
               </Link>
             </Grid.Row>
-            <Grid.Row className="grid-row-mobile-padding">
+            <Grid.Row>
                 <Link to={props.link}>
                   <Header as='h1' className="pink-header-mobile">
                     <Header.Content>
