@@ -7,10 +7,12 @@ This app is best viewed in firefox. I will try to update this for other browsers
 ## Known Issues
 
 * Refresh of a page results in 404
+* images make page load slowly
 * CSS transitions on nav do not display on browsers other than firefox.
 
 ## Next Enhancements
 
+* add google page speed test to first post, and accessibility http://wave.webaim.org/
 * add animation to landing page
 * add svgs in vector like the ones on http://devport.co/ front page to first blog post to break up the text
 * add volunteering page?
