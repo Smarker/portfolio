@@ -25,7 +25,7 @@ let Post = (props) => {
               </Header.Content>
             </Header>
           </Link>
-          <ReactMarkdown source={props.markdown} className="blog-style" />
+          {props.content}
           <Link to={props.link}>
             <Button floated='right' inverted className="see-more-button">
               See More
@@ -47,7 +47,8 @@ let Post = (props) => {
                   </Header>
                 </Header.Content>
               </Header>
-            <ReactMarkdown source={props.markdown} className="blog-style" />
+            {/* Images don't display well unless formatted with semantic ui react */}
+            {props.content}
           </Container>
         </div>
       );

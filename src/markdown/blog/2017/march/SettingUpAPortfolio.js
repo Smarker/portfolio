@@ -1,7 +1,16 @@
 import React from 'react';
 import Post from '../../../../components/Blog/Post';
+import ReactMarkdown from 'react-markdown';
 
-const SettingUpAPortfolioMarkdown = `A developer portfolio is a chance to showcase your programming projects and share your
+
+const preview = `A developer portfolio is a chance to showcase your programming projects and share your
+aspirations with others. A portfolio's goal could be to market yourself to potential employers, to share your experiences
+or advice you have on different technologies, or to demonstrate your skills. Given that many people already have Github and LinkedIn accounts,
+a developer portfolio is a great way to set yourself apart from others. Also, it allows you to be able to create a more detailed story about
+yourself. You can express more about the topics you are interested in through posts you make on your portfolio...
+`;
+
+const developerPortfolio = `A developer portfolio is a chance to showcase your programming projects and share your
 aspirations with others. A portfolio's goal could be to market yourself to potential employers, to share your experiences
 or advice you have on different technologies, or to demonstrate your skills. Given that many people already have Github and LinkedIn accounts,
 a developer portfolio is a great way to set yourself apart from others. Also, it allows you to be able to create a more detailed story about
@@ -111,32 +120,29 @@ These are not the only steps that you can do to make your portfolio successful. 
 see what works for them. Good luck!
 `;
 
-const SettingUpAPortfolioPreviewMarkdown = `A developer portfolio is a chance to showcase your programming projects and share your
-aspirations with others. A portfolio's goal could be to market yourself to potential employers, to share your experiences
-or advice you have on different technologies, or to demonstrate your skills. Given that many people already have Github and LinkedIn accounts,
-a developer portfolio is a great way to set yourself apart from others. Also, it allows you to be able to create a more detailed story about
-yourself. You can express more about the topics you are interested in through posts you make on your portfolio...
-`;
+const SettingUpAPortfolioPreview = <ReactMarkdown source={preview} className="blog-style" />
 
-let SettingUpAPortfolio = () => (
-    <Post 
-        link=""
-        image="../../../images/blog/create-portfolio.jpg" 
-        title="Creating a Developer Portfolio" 
-        created="March 27, 2017" 
-        markdown={ SettingUpAPortfolioMarkdown }
-    />
-);
+const SettingUpAPortfolio = <ReactMarkdown source={developerPortfolio} className="blog-style" />
 
-let SettingUpAPortfolioPreview = (
+let SettingUpAPortfolioPreviewPost = () => (
     <Post 
         link="/creating-a-developer-portfolio"
         image="../../../images/blog/create-portfolio.jpg" 
         title="Creating a Developer Portfolio" 
         created="March 27, 2017" 
-        markdown={ SettingUpAPortfolioPreviewMarkdown }
+        content={ SettingUpAPortfolioPreview }
     />
 );
 
-export { SettingUpAPortfolio };
-export default SettingUpAPortfolioPreview;
+let SettingUpAPortfolioPost = () => (
+    <Post 
+        link=""
+        image="../../../images/blog/create-portfolio.jpg" 
+        title="Creating a Developer Portfolio" 
+        created="March 27, 2017" 
+        content={ SettingUpAPortfolio }
+    />
+);
+
+export { SettingUpAPortfolioPost };
+export default SettingUpAPortfolioPreviewPost;

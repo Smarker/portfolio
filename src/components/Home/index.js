@@ -13,8 +13,8 @@ import Post from '../Blog/Post';
 
 //import scrollToComponent from 'react-scroll-to-component';
 
-import SettingUpAPortfolioPreview from '../../markdown/blog/2017/march/SettingUpAPortfolio.js';
-import SettingUpCustomDomainWithHerokuAndNamecheapPreview from '../../markdown/blog/2017/april/SettingUpCustomDomainWithHerokuAndNamecheap.js';
+import SettingUpAPortfolioPreviewPost from '../../markdown/blog/2017/march/SettingUpAPortfolio.js';
+import SettingUpCustomDomainWithHerokuAndNamecheapPreviewPost from '../../markdown/blog/2017/april/SettingUpCustomDomainWithHerokuAndNamecheap.js';
 
 class Home extends React.Component {
   constructor(props) {
@@ -101,9 +101,9 @@ class Home extends React.Component {
             </Grid.Row>
         </Grid>
 
-        {SettingUpAPortfolioPreview}
+        <SettingUpAPortfolioPreviewPost />
 
-        <SettingUpCustomDomainWithHerokuAndNamecheapPreview />
+        <SettingUpCustomDomainWithHerokuAndNamecheapPreviewPost />
 
         <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '10px', 'padding-bottom': '50px', 'margin-top': '40px'}}>
           <Header as='h1' style={{color:'#22252C'}}>
