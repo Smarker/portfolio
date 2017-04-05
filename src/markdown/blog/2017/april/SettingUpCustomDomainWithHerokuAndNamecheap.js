@@ -17,7 +17,7 @@ Create an app hosted on heroku which will be assigned your custom domain name...
 
 `;
 
-const domainList = `To set up a custom domain with heroku and namecheap you will have to 
+const customDomain = `To set up a custom domain with heroku and namecheap you will have to 
 follow these general steps:
 
 ## Buy a domain name
@@ -32,9 +32,9 @@ Create an app hosted on heroku which will be assigned your custom domain name.
 
 #### Sign into Heroku and then go to: 
 
-**Personal Apps > _Your App Name_ > Settings > Domains and Certificates**. 
+**Personal Apps > _Your App Name_ > Settings > Domains and Certificates**: `;
 
-You may also refer to this [guide](https://devcenter.heroku.com/articles/custom-domains) for more details
+const domainList = `You may also refer to this [guide](https://devcenter.heroku.com/articles/custom-domains) for more details
 
 ## Select Domain List
 
@@ -71,6 +71,8 @@ const SettingUpCustomDomainWithHerokuAndNamecheapPreview = <ReactMarkdown source
 
 const SettingUpCustomDomainWithHerokuAndNamecheap = (
     <div>
+        <ReactMarkdown source={customDomain} className="blog-style" />
+        <Image src="../../../../../images/blog/heroku-custom-domain.png" className="image-style" fluid />
         <ReactMarkdown source={domainList} className="blog-style" />
         <Image src="../../../../../images/blog/domain-list.png" className="image-style" fluid />
         <ReactMarkdown source={manage} className="blog-style" />
