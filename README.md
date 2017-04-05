@@ -6,9 +6,9 @@ This app is best viewed in firefox. I will try to update this for other browsers
 
 ## Known Issues
 
-* Refresh of a page results in 404
-* images make page load slowly
-* CSS transitions on nav do not display on browsers other than firefox.
+* Refresh of a page results in 404 - high priority
+* images make page load slowly - medium priority
+* CSS transitions on nav do not display on browsers other than firefox. - low priority
 
 ## Next Enhancements
 
@@ -23,7 +23,6 @@ This app is best viewed in firefox. I will try to update this for other browsers
 * use react semantic mobile, computer, tablet props (ie only={computer}) instead of just semantic
 * Add dimmer on blog post photo?
 * Add post about chattybot and remove most details not needed from its readme
-* Clean up webpack files
 * Add https
 * Add video of completed smart mirror
 * Add video of setting up chatbot
