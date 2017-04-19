@@ -13,7 +13,7 @@ This app is best viewed in firefox. I will try to update this for other browsers
 ## Next Enhancements
 
 * add unit tests 
-* add google page speed test to first post, and accessibility http://wave.webaim.org/
+* accessibility http://wave.webaim.org/
 * add animation to landing page
 * add svgs in vector like the ones on http://devport.co/ front page to first blog post to break up the text
 * add volunteering page?
