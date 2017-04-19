@@ -23,7 +23,7 @@ let's get into the steps that you may need to take to make your portfolio.
 
 When creating a developer portfolio, it is good to first consider your audience. To determine your audience, think about what work or projects 
 are most interesting to you. What are your long-term goals? How do you want others to perceive you? You want to tailor your portfolio so 
-that it draws the "right" kind of people to you. Then, given your audience, tailor the structure of your site and projects around them. 
+that it draws the "right" kind of people to you. Then, given your audience, construct the structure of your site and projects around them. 
 If you made sure to pick the right audience, then the projects and content that you are putting on your site should be things you are 
 interested in.
 
@@ -100,6 +100,11 @@ purchasing a service or domain.
 
 In my case, I bought a domain and deployed my portfolio after I completed the home and about page.
 
+## Getting Your Page Searchable on Google
+
+To have your site show up on google searches, let google know [here](https://www.google.com/webmasters/tools/submit-url?continue=/addurl&pli=1).
+It might take a few days or so before your site will be searchable. 
+
 ## Improving the Usability and Appearance of Your Dev Portfolio
 
 [77% of mobile searches happen at home or at work](https://developers.google.com/webmasters/mobile-sites/) so it is really 
@@ -107,6 +112,10 @@ important that you make your site with mobile in mind.
 
 You can make sure that your site is mobile friendly by checking it with Google's
 [mobile friendly test](https://search.google.com/search-console/mobile-friendly).
+
+In addition to having a mobile friendly site, you also want a site that loads quickly. To check the speed of your site you can do so
+[here](https://developers.google.com/speed/pagespeed/insights/). This site is great because it gives suggestions on how to improve the speed
+of your site on different devices.
 
 ## Keeping Track of Site Visitors
 
