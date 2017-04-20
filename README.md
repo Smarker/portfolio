@@ -33,3 +33,6 @@ This app is best viewed in firefox. I will try to update this for other browsers
 * Add total number of blog posts
 * search blog posts by tag
 * Could add a timeline view - not sure if I want to include this 
+
+## Think About
+* Maybe I should make the images taller on the see more page for posts
