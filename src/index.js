@@ -20,6 +20,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import { SettingUpAPortfolioPost } from './markdown/blog/2017/march/SettingUpAPortfolio';
 import { SettingUpCustomDomainWithHerokuAndNamecheapPost } from './markdown/blog/2017/april/SettingUpCustomDomainWithHerokuAndNamecheap';
+import { VSCodePost } from './markdown/blog/2017/april/VSCode';
 
 /*TODO: change file name to routes.js*/
 const routes = (
@@ -28,6 +29,7 @@ const routes = (
       <Route path='/' exact={true} component={Home}/>
       <Route path='/creating-a-developer-portfolio' component={SettingUpAPortfolioPost} />
       <Route path='/setting-up-custom-domain-with-heroku-and-namecheap' component={SettingUpCustomDomainWithHerokuAndNamecheapPost} />
+      <Route path='/vs-code' component={VSCodePost} />
       <Route path='/about' component={About}/>
       <Route path='/projects' component={Projects}/>
     </Main>

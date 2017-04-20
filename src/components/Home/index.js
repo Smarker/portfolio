@@ -15,6 +15,7 @@ import Post from '../Blog/Post';
 
 import SettingUpAPortfolioPreviewPost from '../../markdown/blog/2017/march/SettingUpAPortfolio.js';
 import SettingUpCustomDomainWithHerokuAndNamecheapPreviewPost from '../../markdown/blog/2017/april/SettingUpCustomDomainWithHerokuAndNamecheap.js';
+import VSCodePreviewPost from '../../markdown/blog/2017/april/VSCode.js';
 
 class Home extends React.Component {
   constructor(props) {
@@ -104,6 +105,8 @@ class Home extends React.Component {
         <SettingUpAPortfolioPreviewPost />
 
         <SettingUpCustomDomainWithHerokuAndNamecheapPreviewPost />
+
+        <VSCodePreviewPost />
 
         <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '10px', 'padding-bottom': '50px', 'margin-top': '40px'}}>
           <Header as='h1' style={{color:'#22252C'}}>
