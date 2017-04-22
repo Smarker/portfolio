@@ -98,7 +98,7 @@ let SettingUpCustomDomainWithHerokuAndNamecheapPost = () => (
 
 let SettingUpCustomDomainWithHerokuAndNamecheapPreviewPost = () => (
     <Post 
-        link="/blog/setting-up-custom-domain-with-heroku-and-namecheap"
+        link="/setting-up-custom-domain-with-heroku-and-namecheap"
         image="../../../images/blog/heroku-namecheap.jpg" 
         title="Setting Up a Custom Domain with Heroku and Namecheap" 
         created="April 2, 2017" 

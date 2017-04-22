@@ -39,6 +39,18 @@ a:hover
      cursor:pointer;
 }
 
+a.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+a.nav-link:hover
+{
+     color: #E14658;
+     text-decoration:none;
+     cursor:pointer;
+}
+
 .ui.nav-dark.menu {
   background: #22252C;
   border: none !important;

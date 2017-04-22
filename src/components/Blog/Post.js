@@ -2,15 +2,13 @@ import React from 'react';
 
 import './style.css';
 
-import { Container, Header, Image, Button, Label } from 'semantic-ui-react'
+import { Container, Header, Image, Button } from 'semantic-ui-react'
 
-import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom'
 
 
 /* Get this working for mobile */
 let Post = (props) => {
-    {/* Post Preview */}
     if(props.link !== "") {
       return (
         <Container text className="post-padding-preview">
@@ -33,7 +31,6 @@ let Post = (props) => {
           </Link>
         </Container>
       );
-    {/* Full Post */}
     } else {
       return (
         <div className="post-padding-full">

@@ -1,7 +1,6 @@
 import React from 'react';
 import Post from '../../../../components/Blog/Post';
 import ReactMarkdown from 'react-markdown';
-import { Image } from 'semantic-ui-react';
 import Highlight from 'react-highlight';
 import '../../../../../node_modules/highlight.js/styles/ocean.css';
 
@@ -62,7 +61,7 @@ const VSCode = (
 
 let VSCodePreviewPost = () => (
     <Post 
-        link="/blog/vs-code"
+        link="/vs-code"
         image="../../../images/blog/light-extension.jpg" 
         title="Adding Extensions Visual Studio Code" 
         created="April 22, 2017" 

@@ -12,19 +12,17 @@ class Main extends React.Component {
 
     this.state = {
       scrollPosition: 0,
-      styleName: "nav-white"
+      navStyle: "nav-dark"
     };
 
     //binding necessary to get 'this' to work in callback
-    this.handleScroll = this.handleScroll.bind(this);
+    //this.handleScroll = this.handleScroll.bind(this);
     this.handleItemClick = this.handleItemClick.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('click', this.handleItemClick);
-
-
   }
 
   componentWillUnmount() {
@@ -33,47 +31,37 @@ class Main extends React.Component {
   }
 
   handleScroll(event) {
-
-    console.log("you are on this page: " + this.props.name);
     let height = window.innerHeight;
 
     this.setState({ scrollPosition: event.pageY });
 
-    if(this.state.scrollPosition > height - 50 && name != 'about' && name != 'projects') { //for 50px nav height
-      this.setState({ styleName: 'nav-dark-fade' });
+    if(this.state.scrollPosition > height - 50) { //for 50px nav height
+      this.setState({ navStyle: 'nav-dark-fade' });
     } else {
-      this.setState({ styleName: 'nav-white-fade' });
+      this.setState({ navStyle: 'nav-white-fade' });
     }
-    
   }
 
-  handleItemClick(e, { name }) {
-    console.log(name);
-    this.setState({ activeItem: name });
-    if(name == 'projects' || name == 'about' ) {
-      this.setState({ styleName: 'nav-dark' });
-    } else {
-      this.setState({ styleName: 'nav-white' });
-    }
+  handleItemClick(e) {
+    this.setState({ name: this.props.name });
   }
 
   render() {
-    const { activeItem } = this.state
     return (
       <div className="main-content">
         <div className="ui top fixed sticky" style={{width: '100%'}}>
-            <Menu size='large' attached='top' className={this.state.styleName}>
-              <Menu.Item onClick={this.handleItemClick} name="home">
-              <Link to="/">SM</Link>
+            <Menu size='large' attached='top' className={this.state.navStyle}>
+              <Menu.Item onClick={this.handleItemClick}>
+              <Link to="/" className="nav-link">SM</Link>
               </Menu.Item>
               <Menu.Menu position='right'>
 
-                <Menu.Item onClick={this.handleItemClick} name="about">
-                  <Link to="/about">About</Link>
+                <Menu.Item onClick={this.handleItemClick}>
+                  <Link to="/about" className="nav-link">About</Link>
                 </Menu.Item>
 
-                <Menu.Item onClick={this.handleItemClick} name="projects">
-                  <Link to="/projects">Projects</Link>
+                <Menu.Item onClick={this.handleItemClick}>
+                  <Link to="/projects" className="nav-link">Projects</Link>
                 </Menu.Item>
               </Menu.Menu>
             </Menu>

@@ -55,8 +55,9 @@ h1 > .content {
 
 /*See More Button Style*/
 .ui.inverted.right.floated.button.see-more-button {
+  background: #E8E8E8;
   color: #22252C;
-  box-shadow: 0 0 0 2px #22252C inset !important;
+  box-shadow: 0 0 0 2px #E8E8E8 inset !important;
 }
 
 .ui.inverted.right.floated.button.see-more-button:hover {
