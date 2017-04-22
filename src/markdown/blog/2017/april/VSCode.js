@@ -1,14 +1,18 @@
 import React from 'react';
 import Post from '../../../../components/Blog/Post';
 import ReactMarkdown from 'react-markdown';
-import { Image } from 'semantic-ui-react'
+import { Image } from 'semantic-ui-react';
+import Highlight from 'react-highlight';
+import '../../../../../node_modules/highlight.js/styles/ocean.css';
 
-const preview = `this is where ill talk about vs
+const preview = `Visual Studio Code is a free open source IDE that comes with a bunch of features like autocompletion,
+integration with git, debugging, and extensions. I have been using this IDE for a while now after realizing that it is much
+less laggy than Atom is when editing code. I also like how quickly I can make commits to git right through the editor. Also,
+it comes with the ability to download customized extensions like 'Debugger for Chrome' and 'Reactjs code snippets' which 
+really speed up development...
 `;
 
-const vscode = `##About VS Code
-
-Visual Studio Code is a free open source IDE that comes with a bunch of features like autocompletion,
+const vscode = `Visual Studio Code is a free open source IDE that comes with a bunch of features like autocompletion,
 integration with git, debugging, and extensions. I have been using this IDE for a while now after realizing that it is much
 less laggy than Atom is when editing code. I also like how quickly I can make commits to git right through the editor. Also,
 it comes with the ability to download customized extensions like 'Debugger for Chrome' and 'Reactjs code snippets' which 
@@ -26,28 +30,35 @@ See [here](https://github.com/Microsoft/vscode-chrome-debug) for more informatio
 
 For example, this is what I used in my launch.json file:
 
-\`\`\`
-{
-  "version": "0.2.0",
-  "configurations": [{
-    "name": "Chrome",
-    "type": "chrome",
-    "request": "launch",
-    "url": "http://localhost:3000",
-    "webRoot": "\${workspaceRoot}/src",
-    "userDataDir": "\${workspaceRoot}/.vscode/chrome",
-    "sourceMapPathOverrides": {
-      "webpack:///src/*": "\${webRoot}/*"
-    }
-  }]
-}
-\`\`\`
+`;
 
+const code = `
+    {
+        "version": "0.2.0",
+        "configurations": [{
+            "name": "Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "\${workspaceRoot}/src",
+            "userDataDir": "\${workspaceRoot}/.vscode/chrome",
+            "sourceMapPathOverrides": {
+            "webpack:///src/*": "\${webRoot}/*"
+            }
+        }]
+    }
 `;
 
 const VSCodePreview = <ReactMarkdown source={preview} className="blog-style" />
 
-const VSCode = <ReactMarkdown source={vscode} className="blog-style" />
+const VSCode = (
+    <div>
+        <ReactMarkdown source={vscode} className="blog-style" />
+        <Highlight className='JavaScript'>
+            {code}
+        </Highlight>
+    </div>
+);
 
 let VSCodePreviewPost = () => (
     <Post 
