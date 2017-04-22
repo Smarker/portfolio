@@ -28,7 +28,7 @@ To add an extension like 'Debugger for Chrome' follow these steps:
 * Edit launch.json and add a configuration. You wil need to specify whether you want to run the debugger against a file or url. 
 See [here](https://github.com/Microsoft/vscode-chrome-debug) for more information on what to put in the launch.json file.
 
-For example, this is what I used in my launch.json file:
+For example, this is what I used in my launch.json file. I chose to run the debugger against a url:
 
 `;
 
@@ -63,9 +63,9 @@ const VSCode = (
 let VSCodePreviewPost = () => (
     <Post 
         link="/vs-code"
-        image="../../../images/blog/create-portfolio.jpg" 
+        image="../../../images/blog/light-extension.jpg" 
         title="Adding Extensions Visual Studio Code" 
-        created="April 19, 2017" 
+        created="April 22, 2017" 
         content={ VSCodePreview }
     />
 );
@@ -73,9 +73,9 @@ let VSCodePreviewPost = () => (
 let VSCodePost = () => (
     <Post 
         link=""
-        image="../../../images/blog/create-portfolio.jpg" 
+        image="../../../images/blog/light-extension.jpg" 
         title="Adding Extensions Visual Studio Code" 
-        created="April 19, 2017" 
+        created="April 22, 2017" 
         content={ VSCode }
     />
 );

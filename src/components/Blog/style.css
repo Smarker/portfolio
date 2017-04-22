@@ -38,17 +38,31 @@
   margin-left:5px;
 }
 
+h1 > .content {
+  padding: 0;
+}
+
 /*Image Style*/
 .image-style {
-  max-height: 300px;
+  max-height: 500px;
+  box-shadow: 1px 1px 5px #d3d3d3;
+}
+
+.image-style-preview {
+  max-height: 200px;
   box-shadow: 1px 1px 5px #d3d3d3;
 }
 
 /*See More Button Style*/
+.ui.inverted.right.floated.button.see-more-button {
+  color: #22252C;
+  box-shadow: 0 0 0 2px #22252C inset !important;
+}
+
 .ui.inverted.right.floated.button.see-more-button:hover {
-  background: #E14658;
+  background: #22252C;
   color: white;
-  box-shadow: 0 0 0 2px #E14658 inset !important;
+  box-shadow: 0 0 0 2px #22252C inset !important;
 }
 
 /*Post Padding Style*/

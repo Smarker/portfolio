@@ -15,7 +15,7 @@ let Post = (props) => {
       return (
         <Container text className="post-padding-preview">
           <Link to={props.link}>
-            <Image src={props.image} size='huge' className="image-style" />
+            <Image src={props.image} size='huge' className="image-style-preview" />
             <Header as='h1' className="pink-header">
               <Header.Content>
                 {props.title}
