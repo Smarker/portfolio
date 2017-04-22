@@ -135,7 +135,7 @@ const SettingUpAPortfolio = <ReactMarkdown source={developerPortfolio} className
 
 let SettingUpAPortfolioPreviewPost = () => (
     <Post 
-        link="/creating-a-developer-portfolio"
+        link="/blog/creating-a-developer-portfolio"
         image="../../../images/blog/create-portfolio.jpg" 
         title="Creating a Developer Portfolio" 
         created="March 27, 2017" 

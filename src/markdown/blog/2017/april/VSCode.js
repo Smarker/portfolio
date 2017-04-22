@@ -62,7 +62,7 @@ const VSCode = (
 
 let VSCodePreviewPost = () => (
     <Post 
-        link="/vs-code"
+        link="/blog/vs-code"
         image="../../../images/blog/light-extension.jpg" 
         title="Adding Extensions Visual Studio Code" 
         created="April 22, 2017" 
