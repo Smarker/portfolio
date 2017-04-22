@@ -99,8 +99,8 @@ class Home extends React.Component {
 
         <SettingUpAPortfolioPreviewPost />
 
-        <Container fluid textAlign='center' style={{background: '#E8E8E8', 'padding-top': '10px', 'padding-bottom': '50px', 'margin-top': '40px'}}>
-          <Header as='h1' style={{color:'#22252C'}}>
+        <Container fluid textAlign='center' style={{background: '#545A6A', 'padding-top': '10px', 'padding-bottom': '50px', 'margin-top': '40px'}}>
+          <Header as='h1' style={{color:'white'}}>
             <Header.Content>
               Want to work together?
             </Header.Content>
