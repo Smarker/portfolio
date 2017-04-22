@@ -102,11 +102,11 @@ class Home extends React.Component {
             </Grid.Row>
         </Grid>
 
-        <SettingUpAPortfolioPreviewPost />
+        <VSCodePreviewPost />
 
         <SettingUpCustomDomainWithHerokuAndNamecheapPreviewPost />
 
-        <VSCodePreviewPost />
+        <SettingUpAPortfolioPreviewPost />
 
         <Container fluid textAlign='center' style={{background: '#E14658', 'padding-top': '10px', 'padding-bottom': '50px', 'margin-top': '40px'}}>
           <Header as='h1' style={{color:'#22252C'}}>
