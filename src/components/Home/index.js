@@ -45,8 +45,8 @@ class Home extends React.Component {
                 <Container text>
                   {/*Use below image for about page*/}
                   {/*<Image src={prof} className='bordered-image-white' size='small' shape='circular' centered />*/}
-                  <Header as='h1' inverted>Stephanie Marker</Header>
-                  <Header as='h3' inverted>Software Engineer</Header>
+                  <Header as='h1' style={{'font-size': '3em'}} inverted>Stephanie Marker</Header>
+                  <Header as='h3' style={{'font-size': '1.5em'}} inverted>Software Engineer</Header>
                   <p style={{color: 'white'}}>I am a full stack software engineer from New Jersey. </p>
                   <p style={{color: 'white'}}>Check out some of my projects.</p>
                   <Button inverted icon='github' size='small' onClick={this.githubClick}  />
@@ -64,7 +64,7 @@ class Home extends React.Component {
               <Grid.Column width={8} textAlign='center' verticalAlign='middle'>
                 <Container text>
                   {/*<Image src={prof} className='bordered-image-white' size='small' shape='circular' centered />*/}
-                  <Header as='h1' inverted>Stephanie Marker</Header>
+                  <Header as='h1' style={{'font-size': '2em'}} inverted>Stephanie Marker</Header>
                   <Header as='h3' inverted>Software Engineer</Header>
                   <p style={{color: 'white'}}>I am a full stack software engineer from New Jersey. </p>
                   <p style={{color: 'white'}}>Check out some of my projects.</p>
