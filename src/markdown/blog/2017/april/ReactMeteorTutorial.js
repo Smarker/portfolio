@@ -497,7 +497,7 @@ const ReactMeteorTutorialPreview = <ReactMarkdown source={preview} className="bl
 const ReactMeteorTutorial = (
     <div>
         <ReactMarkdown source={rmSummary} className="blog-style" />
-        <Image src="../../../../../images/blog/ReactMeteor/final-product.png" className="image-style" fluid />
+        <Image src="../../../../../images/blog/ReactMeteor/final.png" className="image-style" fluid />
         <ReactMarkdown source={installMeteor} className="blog-style" />
         <Highlight className='JavaScript'>
             {createApp}
@@ -597,7 +597,7 @@ const ReactMeteorTutorial = (
             {addContainerToMainCode}
         </Highlight>
         <ReactMarkdown source={closing} className="blog-style" />
-        <Image src="../../../../../images/blog/ReactMeteor/final-product.png" className="image-style" fluid />
+        <Image src="../../../../../images/blog/ReactMeteor/final.png" className="image-style" fluid />
     </div>
 );
 
