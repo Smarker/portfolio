@@ -503,7 +503,7 @@ const ReactMeteorTutorial = (
             {createApp}
         </Highlight>
         <ReactMarkdown source={rmFolder} className="blog-style" />
-        <Image src="../../../../../images/blog/ReactMeteor/file-structure.png" className="image-style" fluid />
+        <Image src="../../../../../images/blog/ReactMeteor/folder-structure.png" className="image-style" fluid />
         <ReactMarkdown source={setUpFiles} className="blog-style" />
         <Highlight className='JavaScript'>
             {installReact}
@@ -545,7 +545,7 @@ const ReactMeteorTutorial = (
             {check}
         </Highlight>
         <ReactMarkdown source={seeButton} className="blog-style" />
-        <Image src="../../../../../images/blog/ReactMeteor/button.png" className="image-style" fluid />
+        <Image src="../../../../../images/blog/ReactMeteor/initial-button.png" className="image-style" fluid />
         <ReactMarkdown source={post} className="blog-style" />
         <Highlight className='JavaScript'>
             {postImports}
@@ -567,7 +567,7 @@ const ReactMeteorTutorial = (
             {updateMainCode}
         </Highlight>
         <ReactMarkdown source={tryTheForm} className="blog-style" />
-        <Image src="../../../../../images/blog/ReactMeteor/form.png" className="image-style" fluid />
+        <Image src="../../../../../images/blog/ReactMeteor/form-only.png" className="image-style" fluid />
         <ReactMarkdown source={postCollection} className="blog-style" />
         <Highlight className='JavaScript'>
             {installAldeed}
