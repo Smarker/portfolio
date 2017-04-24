@@ -1,7 +1,7 @@
 import React from 'react';
 import Post from '../../../../components/Blog/Post';
 import ReactMarkdown from 'react-markdown';
-import { Image } from 'semantic-ui-react'
+import { Image } from 'semantic-ui-react';
 
 /* markdown and images */
 const preview = `To set up a custom domain with heroku and namecheap you will have to 

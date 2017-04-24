@@ -9,6 +9,7 @@ import {Splash5, SmallSplash} from './splash.js';
 import SettingUpAPortfolioPreviewPost from '../../markdown/blog/2017/march/SettingUpAPortfolio.js';
 import SettingUpCustomDomainWithHerokuAndNamecheapPreviewPost from '../../markdown/blog/2017/april/SettingUpCustomDomainWithHerokuAndNamecheap.js';
 import VSCodePreviewPost from '../../markdown/blog/2017/april/VSCode.js';
+import ReactMeteorTutorialPreviewPost from '../../markdown/blog/2017/april/ReactMeteorTutorial.js';
 
 class Home extends React.Component {
   constructor(props) {
@@ -92,6 +93,8 @@ class Home extends React.Component {
               </Grid.Column>
             </Grid.Row>
         </Grid>
+
+        <ReactMeteorTutorialPreviewPost />
 
         <VSCodePreviewPost />
 
