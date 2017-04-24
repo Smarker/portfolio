@@ -1,3 +1,11 @@
+.parallax-home {
+  background-image: url("/images/splash2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*Get rid of margins on smaller screen for containers*/
 .ui.fluid.container {
     margin-left: 0 !important;

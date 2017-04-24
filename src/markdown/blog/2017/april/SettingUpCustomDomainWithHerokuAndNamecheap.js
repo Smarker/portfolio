@@ -92,6 +92,7 @@ let SettingUpCustomDomainWithHerokuAndNamecheapPost = () => (
         image="../../../images/blog/heroku-namecheap.jpg" 
         title="Setting Up a Custom Domain with Heroku and Namecheap" 
         created="April 2, 2017" 
+        github=""
         content={ SettingUpCustomDomainWithHerokuAndNamecheap }
     />
 );
@@ -102,6 +103,7 @@ let SettingUpCustomDomainWithHerokuAndNamecheapPreviewPost = () => (
         image="../../../images/blog/heroku-namecheap.jpg" 
         title="Setting Up a Custom Domain with Heroku and Namecheap" 
         created="April 2, 2017" 
+        github=""
         content={ SettingUpCustomDomainWithHerokuAndNamecheapPreview }
     />
 );

@@ -607,6 +607,7 @@ let ReactMeteorTutorialPreviewPost = () => (
         image="../../../images/blog/meteor-guide.jpg" 
         title="React Meteor Tutorial with Semantic UI Meteor and MongoDB" 
         created="April 23, 2017" 
+        github="https://github.com/Smarker/meteor-react-tutorial"
         content={ ReactMeteorTutorialPreview }
     />
 );
@@ -617,6 +618,7 @@ let ReactMeteorTutorialPost = () => (
         image="../../../images/blog/meteor-guide.jpg" 
         title="React Meteor Tutorial with Semantic UI Meteor and MongoDB" 
         created="April 23, 2017" 
+        github="https://github.com/Smarker/meteor-react-tutorial"
         content={ ReactMeteorTutorial }
     />
 );

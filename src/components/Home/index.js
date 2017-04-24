@@ -39,7 +39,7 @@ class Home extends React.Component {
       <div className="content">
 
         <Grid className="computer only" padded columns={2} stackable>
-            <Grid.Row style={{'background-image': 'url("/images/splash2.jpg")', 'background-size':'cover'}} stretched>
+            <Grid.Row className="parallax-home" stretched>
               <Grid.Column width={6} textAlign='center' verticalAlign='middle'>
               </Grid.Column>
               <Grid.Column width={10} textAlign='center' verticalAlign='middle'>

@@ -139,6 +139,7 @@ let SettingUpAPortfolioPreviewPost = () => (
         image="../../../images/blog/create-portfolio.jpg" 
         title="Creating a Developer Portfolio" 
         created="March 27, 2017" 
+        github=""
         content={ SettingUpAPortfolioPreview }
     />
 );
@@ -149,6 +150,7 @@ let SettingUpAPortfolioPost = () => (
         image="../../../images/blog/create-portfolio.jpg" 
         title="Creating a Developer Portfolio" 
         created="March 27, 2017" 
+        github=""
         content={ SettingUpAPortfolio }
     />
 );

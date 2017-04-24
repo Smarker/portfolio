@@ -65,6 +65,7 @@ let VSCodePreviewPost = () => (
         image="../../../images/blog/light-extension.jpg" 
         title="Adding Extensions Visual Studio Code" 
         created="April 22, 2017" 
+        github=""
         content={ VSCodePreview }
     />
 );
@@ -75,6 +76,7 @@ let VSCodePost = () => (
         image="../../../images/blog/light-extension.jpg" 
         title="Adding Extensions Visual Studio Code" 
         created="April 22, 2017" 
+        github=""
         content={ VSCode }
     />
 );
