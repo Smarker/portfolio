@@ -22,6 +22,7 @@ import { SettingUpAPortfolioPost } from './markdown/blog/2017/march/SettingUpAPo
 import { SettingUpCustomDomainWithHerokuAndNamecheapPost } from './markdown/blog/2017/april/SettingUpCustomDomainWithHerokuAndNamecheap';
 import { VSCodePost } from './markdown/blog/2017/april/VSCode';
 import { ReactMeteorTutorialPost } from './markdown/blog/2017/april/ReactMeteorTutorial';
+import { ChattybotPost } from './markdown/blog/2017/may/Chattybot';
 
 /*TODO: change file name to routes.js*/
 const routes = (
@@ -32,6 +33,7 @@ const routes = (
       <Route path='/setting-up-custom-domain-with-heroku-and-namecheap' component={SettingUpCustomDomainWithHerokuAndNamecheapPost} />
       <Route path='/vs-code' component={VSCodePost} />
       <Route path='/react-meteor-tutorial' component={ReactMeteorTutorialPost} />
+      <Route path='/hubot-chatbot-using-slack-as-adapter' component={ChattybotPost} />
       <Route path='/about' component={About}/>
       <Route path='/projects' component={Projects}/>
     </Main>

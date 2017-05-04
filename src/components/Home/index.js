@@ -10,6 +10,7 @@ import SettingUpAPortfolioPreviewPost from '../../markdown/blog/2017/march/Setti
 import SettingUpCustomDomainWithHerokuAndNamecheapPreviewPost from '../../markdown/blog/2017/april/SettingUpCustomDomainWithHerokuAndNamecheap.js';
 import VSCodePreviewPost from '../../markdown/blog/2017/april/VSCode.js';
 import ReactMeteorTutorialPreviewPost from '../../markdown/blog/2017/april/ReactMeteorTutorial.js';
+import ChattybotPreviewPost from '../../markdown/blog/2017/may/Chattybot.js';
 
 class Home extends React.Component {
   constructor(props) {
@@ -93,6 +94,8 @@ class Home extends React.Component {
               </Grid.Column>
             </Grid.Row>
         </Grid>
+
+        <ChattybotPreviewPost />
 
         <ReactMeteorTutorialPreviewPost />
 
