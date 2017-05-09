@@ -10,9 +10,9 @@ I am still working on my developer portfolio, but you can take a look at what I 
 ## Next Enhancements
 
 * add react meta tags
+* add study squad project
 * add unit tests 
 * accessibility http://wave.webaim.org/
-* add animation to landing page
 * add svgs in vector like the ones on http://devport.co/ front page to first blog post to break up the text
 * add volunteering page?
 * tag posts so they can be more easily searched
@@ -20,7 +20,6 @@ I am still working on my developer portfolio, but you can take a look at what I 
 * paginate the posts
 * use react semantic mobile, computer, tablet props (ie only={computer}) instead of just semantic
 * Add dimmer on blog post photo?
-* Add post about chattybot and remove most details not needed from its readme
 * Add https
 * Add video of completed smart mirror
 * Add video of setting up chatbot
@@ -29,7 +28,3 @@ I am still working on my developer portfolio, but you can take a look at what I 
 
 * Add total number of blog posts
 * search blog posts by tag
-* Could add a timeline view - not sure if I want to include this 
-
-## Think About
-* Maybe I should make the images taller on the see more page for posts
