@@ -9,6 +9,7 @@ I am still working on my developer portfolio, but you can take a look at what I 
 
 ## Next Enhancements
 
+* add react meta tags
 * add unit tests 
 * accessibility http://wave.webaim.org/
 * add animation to landing page
