@@ -4,14 +4,11 @@ import ReactDOM from 'react-dom';
 
 import '../node_modules/semantic-ui-css/semantic.min.css';
 
-import { browserHistory } from 'react-router';
-
 import './index.css';
 
 //using ES6 modules
 import {
-  BrowserRouter as Router,
-  Route,
+  BrowserRouter as Router
 } from 'react-router-dom'
 
 import Main from './components/Main';
@@ -24,23 +21,16 @@ import { VSCodePost } from './markdown/blog/2017/april/VSCode';
 import { ReactMeteorTutorialPost } from './markdown/blog/2017/april/ReactMeteorTutorial';
 import { ChattybotPost } from './markdown/blog/2017/may/Chattybot';
 
-/*TODO: change file name to routes.js*/
-const routes = (
-  <Router history={browserHistory}>
-    <Main>
-      <Route path='/' exact={true} component={Home}/>
-      <Route path='/creating-a-developer-portfolio' component={SettingUpAPortfolioPost} />
-      <Route path='/setting-up-custom-domain-with-heroku-and-namecheap' component={SettingUpCustomDomainWithHerokuAndNamecheapPost} />
-      <Route path='/vs-code' component={VSCodePost} />
-      <Route path='/react-meteor-tutorial' component={ReactMeteorTutorialPost} />
-      <Route path='/hubot-chatbot-using-slack-as-adapter' component={ChattybotPost} />
-      <Route path='/about' component={About}/>
-      <Route path='/projects' component={Projects}/>
-    </Main>
-  </Router>
+import {render} from "react-dom";
+import {browserHistory, match} from "react-router";
+
+import createRoutes from "./routes";
+
+const Root = () => (
+  <Router history={browserHistory}>{createRoutes()}</Router>
 );
 
 ReactDOM.render(
-  routes,
+  <Root />,
   document.getElementById('root')
 );
