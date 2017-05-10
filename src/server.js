@@ -7,6 +7,7 @@ import createRoutes from "./createRoutes";
 
 /* 
 To run on server:
+npm run build-win
 serve -s build 
 */
 
