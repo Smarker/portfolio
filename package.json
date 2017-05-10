@@ -38,9 +38,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && npm run build-server",
+    "build-win": "react-scripts build && npm run build-server-win",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build-server": "NODE_ENV=production babel --source-maps --out-dir build-lib src",
+    "build-server-win": "set NODE_ENV=production babel --source-maps --out-dir build-lib src",
     "server": "node ./build-lib/server.js"
   }
 }
