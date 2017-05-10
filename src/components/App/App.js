@@ -2,6 +2,7 @@ import React from "react";
 import {connect} from "react-redux"; // this is optional 
 import {withWrapper} from "create-react-server/wrapper";
 import Root from "../../index.js";
+
 export class App extends React.Component {
  
     static async getInitialProps({location: {pathname, query}, params, store}) {
@@ -10,7 +11,7 @@ export class App extends React.Component {
  
     render() {
         return (
-            <div>server rendered</div>
+            <Root />
         );
     }
  

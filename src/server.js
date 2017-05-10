@@ -13,5 +13,5 @@ serve -s build
 createExpressServer({
   createRoutes: () => (createRoutes()),
   outputPath: path.join(process.cwd(), 'build'),
-  port: process.env.PORT || 3000
+  port: env.PORT || 8000
 });
