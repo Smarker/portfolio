@@ -6,6 +6,9 @@ import {createExpressServer} from "create-react-server";
 import createRoutes from "./createRoutes";
 
 /* 
+
+//http://stackoverflow.com/questions/41772411/react-routing-works-in-local-machine-but-not-heroku
+
 To run on server:
 npm run build-win
 serve -s build 

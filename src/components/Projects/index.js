@@ -26,9 +26,8 @@ export default class Projects extends React.Component {
     return (
       <div className="content" id="projects-container">
         <Container text style={{'padding-top': '50px'}}>
-
           <Card.Group stackable>
-            <Card>
+            <Card href="/hubot-chatbot-using-slack-as-adapter">
               <Image src={hubot} className="zoom-image" />
               <Card.Content>
                 <Divider horizontal> <Button className="circle-button" circular icon='github'  onClick={this.githubChatbotClick}/> </Divider>
