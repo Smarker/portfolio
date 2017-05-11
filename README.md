@@ -13,7 +13,6 @@ I am still working on my developer portfolio, but you can take a look at what I 
 * add study squad project
 * add empower post
 * add iceland itinerary?
-* add downloadable resume
 * add unit tests 
 * accessibility http://wave.webaim.org/
 * add svgs in vector like the ones on http://devport.co/ front page to first blog post to break up the text
