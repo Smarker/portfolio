@@ -81,7 +81,6 @@ class Home extends React.Component {
                   <Button inverted icon='github' size='small' onClick={this.githubClick}  />
                   <Button inverted icon='linkedin' size='small' onClick={this.linkedinClick}  />
                   <Button inverted icon='mail' size='small' onClick={this.emailClick}  />
-                  <Button inverted icon='file pdf outline' size='small' onClick={this.pdfClick}  />
                 </Container>
               </Grid.Column>
             </Grid.Row>
@@ -99,7 +98,6 @@ class Home extends React.Component {
                   <Button inverted icon='github' size='small' onClick={this.githubClick}  />
                   <Button inverted icon='linkedin' size='small' onClick={this.linkedinClick}  />
                   <Button inverted icon='mail' size='small' onClick={this.emailClick}  />
-                  <Button inverted icon='file pdf outline' size='small' onClick={this.pdfClick}  />
                 </Container>
               </Grid.Column>
             </Grid.Row>
