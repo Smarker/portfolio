@@ -8,6 +8,7 @@ I am still working on my developer portfolio, but you can take a look at what I 
 
 ## Next Enhancements
 
+* add animate.css
 * add react meta tags
 * add study squad project
 * add empower post

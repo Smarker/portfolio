@@ -12,6 +12,8 @@ import VSCodePreviewPost from '../../markdown/blog/2017/april/VSCode.js';
 import ReactMeteorTutorialPreviewPost from '../../markdown/blog/2017/april/ReactMeteorTutorial.js';
 import ChattybotPreviewPost from '../../markdown/blog/2017/may/Chattybot.js';
 
+import createPDF from '../PDF/PDF';
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -19,6 +21,11 @@ class Home extends React.Component {
     //binding necessary to get 'this' to work in callback
     this.githubClick = this.githubClick.bind(this);
     this.linkedinClick = this.linkedinClick.bind(this);
+    this.pdfClick = this.pdfClick.bind(this);
+  }
+
+  pdfClick() {
+    createPDF();
   }
 
   githubClick() {
@@ -54,6 +61,7 @@ class Home extends React.Component {
                   <Button inverted icon='github' size='small' onClick={this.githubClick}  />
                   <Button inverted icon='linkedin' size='small' onClick={this.linkedinClick}  />
                   <Button inverted icon='mail' size='small' onClick={this.emailClick}  />
+                  <Button inverted icon='file pdf outline' size='small' onClick={this.pdfClick}  />
                 </Container>
               </Grid.Column>
             </Grid.Row>
