@@ -1,5 +1,10 @@
 # Stephanie Marker's portfolio
 
+## To Run
+```
+npm start
+```
+
 I am still working on my developer portfolio, but you can take a look at what I have done so far [here](http://www.stephaniemarker.com).
 
 ## Known Issues
